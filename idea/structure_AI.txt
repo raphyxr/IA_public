@@ -1,0 +1,62 @@
+
+
+1. Charger et nettoyer le texte  
+Fonctions clés:
+- `load_text(path) -> str`
+- `normalize_text(text) -> str` (minuscules, espaces, ponctuation)
+
+
+2. Tokeniser le corpus  
+Fonctions clés:
+- `tokenize(text) -> list[str]`
+- `build_vocab(tokens, min_freq=1) -> (token2id, id2token)`
+
+
+3. Encoder les tokens en IDs  
+Fonctions clés:
+- `encode_tokens(tokens, token2id) -> list[int]`
+- `decode_ids(ids, id2token) -> list[str]`
+
+
+4. Créer les exemples d’entraînement (`contexte -> mot suivant`)  
+Fonctions clés:
+- `create_sequences(ids, context_size) -> (X, y)`
+- `train_val_split(X, y, val_ratio=0.1)`
+
+
+5. Définir le modèle (PyTorch)  
+Fonctions clés:
+- `class LanguageModel(nn.Module)` avec `forward(x)`
+- blocs: `nn.Embedding`, `nn.LSTM` (ou GRU), `nn.Linear`
+
+
+6. Entraîner le modèle  
+Fonctions clés:
+- `train_one_epoch(model, loader, optimizer, criterion, device) -> loss`
+- `evaluate(model, loader, criterion, device) -> val_loss`
+- `fit(model, train_loader, val_loader, epochs, lr)`
+
+
+7. Sauvegarder / recharger  
+Fonctions clés:
+- `save_checkpoint(model, token2id, path)`
+- `load_checkpoint(path) -> (model, token2id)`
+
+
+8. Prédire le mot suivant  
+Fonctions clés:
+- `predict_next(context_tokens, model, token2id, id2token, top_k=5) -> list[(mot, prob)]`
+
+
+9. Générer une phrase  
+Fonctions clés:
+- `generate_text(prompt, max_new_tokens, temperature=1.0, top_k=20) -> str`
+
+
+10. Mesurer la qualité  
+Fonctions clés:
+- `compute_perplexity(loss) -> float`
+- `sample_tests()` (quelques prompts fixes pour comparer les versions)
+
+
+Si tu veux, je peux maintenant te donner un squelette complet prêt à coller dans `encode.py` et `apprentissage_emb.py`.

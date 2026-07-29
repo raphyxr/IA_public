@@ -1,0 +1,1816 @@
+debut
+nouveau datset
+nouveau model 3
+transformeurs
+dataset trouve: /content/drive/Othercomputers/surface 9/python/projets/IA/dataset_ids.txt (938657462 octets)
+dataset utilise: /content/drive/Othercomputers/surface 9/python/projets/IA/dataset_ids.txt
+vocab.json invalide: /content/drive/Othercomputers/surface 9/python/projets/IA/vocab.json ligne 2536675, colonne 14 (position 57227814). Decodage texte desactive.
+Regenerer ou recopier vocab.json, puis verifier le fichier avec: python -m json.tool vocab.json
+vocab introuvable: /content/drive/Othercomputers/surface 9/python/projets/IA/vocab.json (decodage texte desactive)
+impossible de charger le checkpoint, entrainement depuis zero. erreur: 
+astuce: garde les memes valeurs (VOCAB_LIMIT/EMB_DIM/HIDDEN_DIM) ou mets RESUME_IF_CHECKPOINT_EXISTS=False
+debut epoch 1
+epoch 1 | chunk 1 [##############################] 1242/1242 (100.0%) loss=7.7847
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 1 traite, tokens vus: 20000
+epoch 1 | chunk 2 [##############################] 1242/1242 (100.0%) loss=7.83430
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 2 traite, tokens vus: 39872
+epoch 1 | chunk 3 [##############################] 1242/1242 (100.0%) loss=7.1282
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 3 traite, tokens vus: 59744
+epoch 1 | chunk 4 [##############################] 1242/1242 (100.0%) loss=8.3033
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 4 traite, tokens vus: 79616
+epoch 1 | chunk 5 [##############################] 1242/1242 (100.0%) loss=8.6974
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 5 traite, tokens vus: 99488
+epoch 1 | chunk 6 [##############################] 1242/1242 (100.0%) loss=7.0634
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 6 traite, tokens vus: 119360
+epoch 1 | chunk 7 [##############################] 1242/1242 (100.0%) loss=6.4309
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 7 traite, tokens vus: 139232
+epoch 1 | chunk 8 [##############################] 1242/1242 (100.0%) loss=7.43349
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 8 traite, tokens vus: 159104
+epoch 1 | chunk 9 [##############################] 1242/1242 (100.0%) loss=5.4445
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 9 traite, tokens vus: 178976
+epoch 1 | chunk 10 [##############################] 1242/1242 (100.0%) loss=6.9527
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 10 traite, tokens vus: 198848
+epoch 1 | chunk 11 [##############################] 1242/1242 (100.0%) loss=7.5021
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 11 traite, tokens vus: 218720
+ok
+epoch 1 | chunk 12 [##############################] 1242/1242 (100.0%) loss=5.8804
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 12 traite, tokens vus: 238592
+epoch 1 | chunk 13 [##############################] 1242/1242 (100.0%) loss=7.9982
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 13 traite, tokens vus: 258464
+epoch 1 | chunk 14 [##############################] 1242/1242 (100.0%) loss=6.9800
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 14 traite, tokens vus: 278336
+epoch 1 | chunk 15 [##############################] 1242/1242 (100.0%) loss=4.9127
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 15 traite, tokens vus: 298208
+epoch 1 | chunk 16 [##############################] 1242/1242 (100.0%) loss=7.85100
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 16 traite, tokens vus: 318080
+epoch 1 | chunk 17 [##############################] 1242/1242 (100.0%) loss=6.8972
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 17 traite, tokens vus: 337952
+epoch 1 | chunk 18 [##############################] 1242/1242 (100.0%) loss=5.9364
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 18 traite, tokens vus: 357824
+epoch 1 | chunk 19 [##############################] 1242/1242 (100.0%) loss=6.6874
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 19 traite, tokens vus: 377696
+epoch 1 | chunk 20 [##############################] 1242/1242 (100.0%) loss=4.5597
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 20 traite, tokens vus: 397568
+epoch 1 | chunk 21 [##############################] 1242/1242 (100.0%) loss=8.7694
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 21 traite, tokens vus: 417440
+epoch 1 | chunk 22 [##############################] 1242/1242 (100.0%) loss=5.62516
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 22 traite, tokens vus: 437312
+ok
+epoch 1 | chunk 23 [##############################] 1242/1242 (100.0%) loss=7.1883
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 23 traite, tokens vus: 457184
+epoch 1 | chunk 24 [##############################] 1242/1242 (100.0%) loss=5.4285
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 24 traite, tokens vus: 477056
+epoch 1 | chunk 25 [##############################] 1242/1242 (100.0%) loss=7.5809
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 25 traite, tokens vus: 496928
+epoch 1 | chunk 26 [##############################] 192/192 (100.0%) loss=7.5523
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+epoch 1 loss: 6.936573916334447
+fin 1
+debut epoch 2
+epoch 2 | chunk 1 [##############################] 1242/1242 (100.0%) loss=6.7520
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 1 traite, tokens vus: 20000
+epoch 2 | chunk 2 [##############################] 1242/1242 (100.0%) loss=7.5774
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 2 traite, tokens vus: 39872
+epoch 2 | chunk 3 [##############################] 1242/1242 (100.0%) loss=6.4882
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 3 traite, tokens vus: 59744
+epoch 2 | chunk 4 [##############################] 1242/1242 (100.0%) loss=6.4716
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 4 traite, tokens vus: 79616
+epoch 2 | chunk 5 [##############################] 1242/1242 (100.0%) loss=6.7768
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 5 traite, tokens vus: 99488
+epoch 2 | chunk 6 [##############################] 1242/1242 (100.0%) loss=5.8767
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 6 traite, tokens vus: 119360
+epoch 2 | chunk 7 [##############################] 1242/1242 (100.0%) loss=5.9760
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 7 traite, tokens vus: 139232
+epoch 2 | chunk 8 [##############################] 1242/1242 (100.0%) loss=5.0494
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 8 traite, tokens vus: 159104
+epoch 2 | chunk 9 [##############################] 1242/1242 (100.0%) loss=6.9344
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 9 traite, tokens vus: 178976
+epoch 2 | chunk 10 [##############################] 1242/1242 (100.0%) loss=5.2355
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 10 traite, tokens vus: 198848
+epoch 2 | chunk 11 [##############################] 1242/1242 (100.0%) loss=5.4476
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 11 traite, tokens vus: 218720
+ok
+epoch 2 | chunk 12 [##############################] 1242/1242 (100.0%) loss=6.3524
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 12 traite, tokens vus: 238592
+epoch 2 | chunk 13 [##############################] 1242/1242 (100.0%) loss=5.4352
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 13 traite, tokens vus: 258464
+epoch 2 | chunk 14 [##############################] 1242/1242 (100.0%) loss=6.8409
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 14 traite, tokens vus: 278336
+epoch 2 | chunk 15 [##############################] 1242/1242 (100.0%) loss=7.0477
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 15 traite, tokens vus: 298208
+epoch 2 | chunk 16 [##############################] 1242/1242 (100.0%) loss=5.3832
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 16 traite, tokens vus: 318080
+epoch 2 | chunk 17 [##############################] 1242/1242 (100.0%) loss=5.7894
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 17 traite, tokens vus: 337952
+epoch 2 | chunk 18 [##############################] 1242/1242 (100.0%) loss=5.2518
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 18 traite, tokens vus: 357824
+epoch 2 | chunk 19 [##############################] 1242/1242 (100.0%) loss=4.8226
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 19 traite, tokens vus: 377696
+epoch 2 | chunk 20 [##############################] 1242/1242 (100.0%) loss=6.6695
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 20 traite, tokens vus: 397568
+epoch 2 | chunk 21 [##############################] 1242/1242 (100.0%) loss=5.1802
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 21 traite, tokens vus: 417440
+epoch 2 | chunk 22 [##############################] 1242/1242 (100.0%) loss=4.4964
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 22 traite, tokens vus: 437312
+ok
+epoch 2 | chunk 23 [##############################] 1242/1242 (100.0%) loss=5.3603
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 23 traite, tokens vus: 457184
+epoch 2 | chunk 24 [##############################] 1242/1242 (100.0%) loss=5.9894
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 24 traite, tokens vus: 477056
+epoch 2 | chunk 25 [##############################] 1242/1242 (100.0%) loss=7.1252
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 25 traite, tokens vus: 496928
+epoch 2 | chunk 26 [##############################] 192/192 (100.0%) loss=6.3499
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+epoch 2 loss: 6.193124116959
+fin 1
+debut epoch 3
+epoch 3 | chunk 1 [##############################] 1242/1242 (100.0%) loss=5.2060
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 1 traite, tokens vus: 20000
+epoch 3 | chunk 2 [##############################] 1242/1242 (100.0%) loss=4.8372
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 2 traite, tokens vus: 39872
+epoch 3 | chunk 3 [##############################] 1242/1242 (100.0%) loss=5.9982
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 3 traite, tokens vus: 59744
+epoch 3 | chunk 4 [##############################] 1242/1242 (100.0%) loss=5.3342
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 4 traite, tokens vus: 79616
+epoch 3 | chunk 5 [##############################] 1242/1242 (100.0%) loss=5.3185
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 5 traite, tokens vus: 99488
+epoch 3 | chunk 6 [##############################] 1242/1242 (100.0%) loss=5.4923
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 6 traite, tokens vus: 119360
+epoch 3 | chunk 7 [##############################] 1242/1242 (100.0%) loss=3.9096
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 7 traite, tokens vus: 139232
+epoch 3 | chunk 8 [##############################] 1242/1242 (100.0%) loss=6.0788
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 8 traite, tokens vus: 159104
+epoch 3 | chunk 9 [##############################] 1242/1242 (100.0%) loss=5.3626
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 9 traite, tokens vus: 178976
+epoch 3 | chunk 10 [##############################] 1242/1242 (100.0%) loss=6.8256
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 10 traite, tokens vus: 198848
+epoch 3 | chunk 11 [##############################] 1242/1242 (100.0%) loss=4.2326
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 11 traite, tokens vus: 218720
+ok
+epoch 3 | chunk 12 [##############################] 1242/1242 (100.0%) loss=5.1052
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 12 traite, tokens vus: 238592
+epoch 3 | chunk 13 [##############################] 1242/1242 (100.0%) loss=6.6306
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 13 traite, tokens vus: 258464
+epoch 3 | chunk 14 [##############################] 1242/1242 (100.0%) loss=6.1980
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 14 traite, tokens vus: 278336
+epoch 3 | chunk 15 [##############################] 1242/1242 (100.0%) loss=5.8383
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 15 traite, tokens vus: 298208
+epoch 3 | chunk 16 [##############################] 1242/1242 (100.0%) loss=5.5532
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 16 traite, tokens vus: 318080
+epoch 3 | chunk 17 [##############################] 1242/1242 (100.0%) loss=4.7803
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 17 traite, tokens vus: 337952
+epoch 3 | chunk 18 [##############################] 1242/1242 (100.0%) loss=5.0870
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 18 traite, tokens vus: 357824
+epoch 3 | chunk 19 [##############################] 1242/1242 (100.0%) loss=5.6691
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 19 traite, tokens vus: 377696
+epoch 3 | chunk 20 [##############################] 1242/1242 (100.0%) loss=4.5351
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 20 traite, tokens vus: 397568
+epoch 3 | chunk 21 [##############################] 1242/1242 (100.0%) loss=6.0557
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 21 traite, tokens vus: 417440
+epoch 3 | chunk 22 [##############################] 1242/1242 (100.0%) loss=7.0400
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 22 traite, tokens vus: 437312
+ok
+epoch 3 | chunk 23 [##############################] 1242/1242 (100.0%) loss=6.0013
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 23 traite, tokens vus: 457184
+epoch 3 | chunk 24 [##############################] 1242/1242 (100.0%) loss=4.0222
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 24 traite, tokens vus: 477056
+epoch 3 | chunk 25 [##############################] 1242/1242 (100.0%) loss=6.3733
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 25 traite, tokens vus: 496928
+epoch 3 | chunk 26 [##############################] 192/192 (100.0%) loss=6.7201
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+epoch 3 loss: 5.809140801032918
+fin 1
+debut epoch 4
+epoch 4 | chunk 1 [##############################] 1242/1242 (100.0%) loss=4.8501
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 1 traite, tokens vus: 20000
+epoch 4 | chunk 2 [##############################] 1242/1242 (100.0%) loss=4.9101
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 2 traite, tokens vus: 39872
+epoch 4 | chunk 3 [##############################] 1242/1242 (100.0%) loss=5.9992
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 3 traite, tokens vus: 59744
+epoch 4 | chunk 4 [##############################] 1242/1242 (100.0%) loss=3.8084
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 4 traite, tokens vus: 79616
+epoch 4 | chunk 5 [##############################] 1242/1242 (100.0%) loss=5.0492
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 5 traite, tokens vus: 99488
+epoch 4 | chunk 6 [##############################] 1242/1242 (100.0%) loss=7.1761
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 6 traite, tokens vus: 119360
+epoch 4 | chunk 7 [##############################] 1242/1242 (100.0%) loss=7.3390
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 7 traite, tokens vus: 139232
+epoch 4 | chunk 8 [##############################] 1242/1242 (100.0%) loss=4.0088
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 8 traite, tokens vus: 159104
+epoch 4 | chunk 9 [##############################] 1242/1242 (100.0%) loss=5.2252
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 9 traite, tokens vus: 178976
+epoch 4 | chunk 10 [##############################] 1242/1242 (100.0%) loss=5.4038
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 10 traite, tokens vus: 198848
+epoch 4 | chunk 11 [##############################] 1242/1242 (100.0%) loss=5.2383
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 11 traite, tokens vus: 218720
+ok
+epoch 4 | chunk 12 [##############################] 1242/1242 (100.0%) loss=3.8772
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 12 traite, tokens vus: 238592
+epoch 4 | chunk 13 [##############################] 1242/1242 (100.0%) loss=5.3035
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 13 traite, tokens vus: 258464
+epoch 4 | chunk 14 [##############################] 1242/1242 (100.0%) loss=5.3958
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 14 traite, tokens vus: 278336
+epoch 4 | chunk 15 [##############################] 1242/1242 (100.0%) loss=6.2741
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 15 traite, tokens vus: 298208
+epoch 4 | chunk 16 [##############################] 1242/1242 (100.0%) loss=8.6734
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 16 traite, tokens vus: 318080
+epoch 4 | chunk 17 [##############################] 1242/1242 (100.0%) loss=6.5352
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 17 traite, tokens vus: 337952
+epoch 4 | chunk 18 [##############################] 1242/1242 (100.0%) loss=5.2264
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 18 traite, tokens vus: 357824
+epoch 4 | chunk 19 [##############################] 1242/1242 (100.0%) loss=6.3527
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 19 traite, tokens vus: 377696
+epoch 4 | chunk 20 [##############################] 1242/1242 (100.0%) loss=3.9435
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 20 traite, tokens vus: 397568
+epoch 4 | chunk 21 [##############################] 1242/1242 (100.0%) loss=5.5906
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 21 traite, tokens vus: 417440
+epoch 4 | chunk 22 [##############################] 1242/1242 (100.0%) loss=4.4060
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 22 traite, tokens vus: 437312
+ok
+epoch 4 | chunk 23 [##############################] 1242/1242 (100.0%) loss=5.5105
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 23 traite, tokens vus: 457184
+epoch 4 | chunk 24 [##############################] 1242/1242 (100.0%) loss=5.5894
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 24 traite, tokens vus: 477056
+epoch 4 | chunk 25 [##############################] 1242/1242 (100.0%) loss=5.2297
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 25 traite, tokens vus: 496928
+epoch 4 | chunk 26 [##############################] 192/192 (100.0%) loss=7.2950
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+epoch 4 loss: 5.503994927517118
+fin 1
+debut epoch 5
+epoch 5 | chunk 1 [##############################] 1242/1242 (100.0%) loss=6.6091
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 1 traite, tokens vus: 20000
+epoch 5 | chunk 2 [##############################] 1242/1242 (100.0%) loss=4.2650
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 2 traite, tokens vus: 39872
+epoch 5 | chunk 3 [##############################] 1242/1242 (100.0%) loss=5.2895
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 3 traite, tokens vus: 59744
+epoch 5 | chunk 4 [##############################] 1242/1242 (100.0%) loss=5.2543
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 4 traite, tokens vus: 79616
+epoch 5 | chunk 5 [##############################] 1242/1242 (100.0%) loss=5.2685
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 5 traite, tokens vus: 99488
+epoch 5 | chunk 6 [##############################] 1242/1242 (100.0%) loss=5.9874
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 6 traite, tokens vus: 119360
+epoch 5 | chunk 7 [##############################] 1242/1242 (100.0%) loss=5.9728
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 7 traite, tokens vus: 139232
+epoch 5 | chunk 8 [##############################] 1242/1242 (100.0%) loss=5.1682
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 8 traite, tokens vus: 159104
+epoch 5 | chunk 9 [##############################] 1242/1242 (100.0%) loss=5.0899
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 9 traite, tokens vus: 178976
+epoch 5 | chunk 10 [##############################] 1242/1242 (100.0%) loss=4.7357
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 10 traite, tokens vus: 198848
+epoch 5 | chunk 11 [##############################] 1242/1242 (100.0%) loss=5.2063
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 11 traite, tokens vus: 218720
+ok
+epoch 5 | chunk 12 [##############################] 1242/1242 (100.0%) loss=4.2744
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 12 traite, tokens vus: 238592
+epoch 5 | chunk 13 [##############################] 1242/1242 (100.0%) loss=5.1568
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 13 traite, tokens vus: 258464
+epoch 5 | chunk 14 [##############################] 1242/1242 (100.0%) loss=4.8317
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 14 traite, tokens vus: 278336
+epoch 5 | chunk 15 [##############################] 1242/1242 (100.0%) loss=5.3394
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 15 traite, tokens vus: 298208
+epoch 5 | chunk 16 [##############################] 1242/1242 (100.0%) loss=5.1620
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 16 traite, tokens vus: 318080
+epoch 5 | chunk 17 [##############################] 1242/1242 (100.0%) loss=4.7078
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 17 traite, tokens vus: 337952
+epoch 5 | chunk 18 [##############################] 1242/1242 (100.0%) loss=5.2900
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 18 traite, tokens vus: 357824
+epoch 5 | chunk 19 [##############################] 1242/1242 (100.0%) loss=4.9369
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 19 traite, tokens vus: 377696
+epoch 5 | chunk 20 [##############################] 1242/1242 (100.0%) loss=4.1522
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 20 traite, tokens vus: 397568
+epoch 5 | chunk 21 [##############################] 1242/1242 (100.0%) loss=5.1563
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 21 traite, tokens vus: 417440
+epoch 5 | chunk 22 [##############################] 1242/1242 (100.0%) loss=4.6668
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 22 traite, tokens vus: 437312
+ok
+epoch 5 | chunk 23 [##############################] 1242/1242 (100.0%) loss=4.7667
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 23 traite, tokens vus: 457184
+epoch 5 | chunk 24 [##############################] 1242/1242 (100.0%) loss=6.2870
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 24 traite, tokens vus: 477056
+epoch 5 | chunk 25 [##############################] 1242/1242 (100.0%) loss=5.5785
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 25 traite, tokens vus: 496928
+epoch 5 | chunk 26 [##############################] 192/192 (100.0%) loss=5.6886
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+epoch 5 loss: 5.248702373877659
+fin 1
+debut epoch 6
+epoch 6 | chunk 1 [##############################] 1242/1242 (100.0%) loss=4.6862
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 1 traite, tokens vus: 20000
+epoch 6 | chunk 2 [##############################] 1242/1242 (100.0%) loss=5.6536
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 2 traite, tokens vus: 39872
+epoch 6 | chunk 3 [##############################] 1242/1242 (100.0%) loss=6.1272
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 3 traite, tokens vus: 59744
+epoch 6 | chunk 4 [##############################] 1242/1242 (100.0%) loss=3.9858
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 4 traite, tokens vus: 79616
+epoch 6 | chunk 5 [##############################] 1242/1242 (100.0%) loss=4.6498
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 5 traite, tokens vus: 99488
+epoch 6 | chunk 6 [##############################] 1242/1242 (100.0%) loss=5.0307
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 6 traite, tokens vus: 119360
+epoch 6 | chunk 7 [##############################] 1242/1242 (100.0%) loss=4.1299
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 7 traite, tokens vus: 139232
+epoch 6 | chunk 8 [##############################] 1242/1242 (100.0%) loss=4.8832
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 8 traite, tokens vus: 159104
+epoch 6 | chunk 9 [##############################] 1242/1242 (100.0%) loss=5.9730
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 9 traite, tokens vus: 178976
+epoch 6 | chunk 10 [##############################] 1242/1242 (100.0%) loss=5.8108
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 10 traite, tokens vus: 198848
+epoch 6 | chunk 11 [##############################] 1242/1242 (100.0%) loss=5.2147
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 11 traite, tokens vus: 218720
+ok
+epoch 6 | chunk 12 [##############################] 1242/1242 (100.0%) loss=5.2483
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 12 traite, tokens vus: 238592
+epoch 6 | chunk 13 [##############################] 1242/1242 (100.0%) loss=4.1998
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 13 traite, tokens vus: 258464
+epoch 6 | chunk 14 [##############################] 1242/1242 (100.0%) loss=5.1149
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 14 traite, tokens vus: 278336
+epoch 6 | chunk 15 [##############################] 1242/1242 (100.0%) loss=4.2236
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 15 traite, tokens vus: 298208
+epoch 6 | chunk 16 [##############################] 1242/1242 (100.0%) loss=5.3553
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 16 traite, tokens vus: 318080
+epoch 6 | chunk 17 [##############################] 1242/1242 (100.0%) loss=4.9822
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 17 traite, tokens vus: 337952
+epoch 6 | chunk 18 [##############################] 1242/1242 (100.0%) loss=5.7555
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 18 traite, tokens vus: 357824
+epoch 6 | chunk 19 [##############################] 1242/1242 (100.0%) loss=6.1569
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 19 traite, tokens vus: 377696
+epoch 6 | chunk 20 [##############################] 1242/1242 (100.0%) loss=4.4080
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 20 traite, tokens vus: 397568
+epoch 6 | chunk 21 [##############################] 1242/1242 (100.0%) loss=5.2816
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 21 traite, tokens vus: 417440
+epoch 6 | chunk 22 [##############################] 1242/1242 (100.0%) loss=4.4648
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 22 traite, tokens vus: 437312
+ok
+epoch 6 | chunk 23 [##############################] 1242/1242 (100.0%) loss=4.6284
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 23 traite, tokens vus: 457184
+epoch 6 | chunk 24 [##############################] 1242/1242 (100.0%) loss=5.3477
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 24 traite, tokens vus: 477056
+epoch 6 | chunk 25 [##############################] 1242/1242 (100.0%) loss=4.0301
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 25 traite, tokens vus: 496928
+epoch 6 | chunk 26 [##############################] 192/192 (100.0%) loss=4.8166
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+epoch 6 loss: 5.031166390644345
+fin 1
+debut epoch 7
+epoch 7 | chunk 1 [##############################] 1242/1242 (100.0%) loss=5.1802
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 1 traite, tokens vus: 20000
+epoch 7 | chunk 2 [##############################] 1242/1242 (100.0%) loss=5.4929
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 2 traite, tokens vus: 39872
+epoch 7 | chunk 3 [##############################] 1242/1242 (100.0%) loss=4.5991
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 3 traite, tokens vus: 59744
+epoch 7 | chunk 4 [##############################] 1242/1242 (100.0%) loss=4.7877
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 4 traite, tokens vus: 79616
+epoch 7 | chunk 5 [##############################] 1242/1242 (100.0%) loss=4.5168
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 5 traite, tokens vus: 99488
+epoch 7 | chunk 6 [##############################] 1242/1242 (100.0%) loss=5.2536
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 6 traite, tokens vus: 119360
+epoch 7 | chunk 7 [##############################] 1242/1242 (100.0%) loss=3.7845
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 7 traite, tokens vus: 139232
+epoch 7 | chunk 8 [##############################] 1242/1242 (100.0%) loss=6.2585
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 8 traite, tokens vus: 159104
+epoch 7 | chunk 9 [##############################] 1242/1242 (100.0%) loss=4.9460
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 9 traite, tokens vus: 178976
+epoch 7 | chunk 10 [##############################] 1242/1242 (100.0%) loss=4.4645
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 10 traite, tokens vus: 198848
+epoch 7 | chunk 11 [##############################] 1242/1242 (100.0%) loss=5.2215
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 11 traite, tokens vus: 218720
+ok
+epoch 7 | chunk 12 [##############################] 1242/1242 (100.0%) loss=3.6715
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 12 traite, tokens vus: 238592
+epoch 7 | chunk 13 [##############################] 1242/1242 (100.0%) loss=4.5392
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 13 traite, tokens vus: 258464
+epoch 7 | chunk 14 [##############################] 1242/1242 (100.0%) loss=4.1780
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 14 traite, tokens vus: 278336
+epoch 7 | chunk 15 [##############################] 1242/1242 (100.0%) loss=4.8972
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 15 traite, tokens vus: 298208
+epoch 7 | chunk 16 [##############################] 1242/1242 (100.0%) loss=5.6590
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 16 traite, tokens vus: 318080
+epoch 7 | chunk 17 [##############################] 1242/1242 (100.0%) loss=3.4847
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 17 traite, tokens vus: 337952
+epoch 7 | chunk 18 [##############################] 1242/1242 (100.0%) loss=3.4595
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 18 traite, tokens vus: 357824
+epoch 7 | chunk 19 [##############################] 1242/1242 (100.0%) loss=5.2903
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 19 traite, tokens vus: 377696
+epoch 7 | chunk 20 [##############################] 1242/1242 (100.0%) loss=4.7770
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 20 traite, tokens vus: 397568
+epoch 7 | chunk 21 [##############################] 1242/1242 (100.0%) loss=3.6936
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 21 traite, tokens vus: 417440
+epoch 7 | chunk 22 [##############################] 1242/1242 (100.0%) loss=4.9246
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 22 traite, tokens vus: 437312
+ok
+epoch 7 | chunk 23 [##############################] 1242/1242 (100.0%) loss=5.1384
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 23 traite, tokens vus: 457184
+epoch 7 | chunk 24 [##############################] 1242/1242 (100.0%) loss=5.3646
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 24 traite, tokens vus: 477056
+epoch 7 | chunk 25 [##############################] 1242/1242 (100.0%) loss=5.5455
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 25 traite, tokens vus: 496928
+epoch 7 | chunk 26 [##############################] 192/192 (100.0%) loss=4.9156
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+epoch 7 loss: 4.845000494912312
+fin 1
+debut epoch 8
+epoch 8 | chunk 1 [##############################] 1242/1242 (100.0%) loss=3.8491
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 1 traite, tokens vus: 20000
+epoch 8 | chunk 2 [##############################] 1242/1242 (100.0%) loss=4.5877
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 2 traite, tokens vus: 39872
+epoch 8 | chunk 3 [##############################] 1242/1242 (100.0%) loss=4.6983
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 3 traite, tokens vus: 59744
+epoch 8 | chunk 4 [##############################] 1242/1242 (100.0%) loss=4.9194
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 4 traite, tokens vus: 79616
+epoch 8 | chunk 5 [##############################] 1242/1242 (100.0%) loss=4.8023
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 5 traite, tokens vus: 99488
+epoch 8 | chunk 6 [##############################] 1242/1242 (100.0%) loss=4.1267
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 6 traite, tokens vus: 119360
+epoch 8 | chunk 7 [##############################] 1242/1242 (100.0%) loss=3.8902
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 7 traite, tokens vus: 139232
+epoch 8 | chunk 8 [##############################] 1242/1242 (100.0%) loss=3.5228
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 8 traite, tokens vus: 159104
+epoch 8 | chunk 9 [##############################] 1242/1242 (100.0%) loss=4.7764
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 9 traite, tokens vus: 178976
+epoch 8 | chunk 10 [##############################] 1242/1242 (100.0%) loss=5.2658
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 10 traite, tokens vus: 198848
+epoch 8 | chunk 11 [##############################] 1242/1242 (100.0%) loss=4.4941
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 11 traite, tokens vus: 218720
+ok
+epoch 8 | chunk 12 [##############################] 1242/1242 (100.0%) loss=4.3789
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 12 traite, tokens vus: 238592
+epoch 8 | chunk 13 [##############################] 1242/1242 (100.0%) loss=4.7931
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 13 traite, tokens vus: 258464
+epoch 8 | chunk 14 [##############################] 1242/1242 (100.0%) loss=4.8129
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 14 traite, tokens vus: 278336
+epoch 8 | chunk 15 [##############################] 1242/1242 (100.0%) loss=3.5614
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 15 traite, tokens vus: 298208
+epoch 8 | chunk 16 [##############################] 1242/1242 (100.0%) loss=5.7043
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 16 traite, tokens vus: 318080
+epoch 8 | chunk 17 [##############################] 1242/1242 (100.0%) loss=3.7968
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 17 traite, tokens vus: 337952
+epoch 8 | chunk 18 [##############################] 1242/1242 (100.0%) loss=4.3327
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 18 traite, tokens vus: 357824
+epoch 8 | chunk 19 [##############################] 1242/1242 (100.0%) loss=3.7039
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 19 traite, tokens vus: 377696
+epoch 8 | chunk 20 [##############################] 1242/1242 (100.0%) loss=3.0018
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 20 traite, tokens vus: 397568
+epoch 8 | chunk 21 [##############################] 1242/1242 (100.0%) loss=4.1644
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 21 traite, tokens vus: 417440
+epoch 8 | chunk 22 [##############################] 1242/1242 (100.0%) loss=4.0742
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 22 traite, tokens vus: 437312
+ok
+epoch 8 | chunk 23 [##############################] 1242/1242 (100.0%) loss=4.8015
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 23 traite, tokens vus: 457184
+epoch 8 | chunk 24 [##############################] 1242/1242 (100.0%) loss=4.0755
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 24 traite, tokens vus: 477056
+epoch 8 | chunk 25 [##############################] 1242/1242 (100.0%) loss=4.2967
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 25 traite, tokens vus: 496928
+epoch 8 | chunk 26 [##############################] 192/192 (100.0%) loss=3.7889
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+epoch 8 loss: 4.683272246918844
+fin 1
+debut epoch 9
+epoch 9 | chunk 1 [##############################] 1242/1242 (100.0%) loss=4.1671
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 1 traite, tokens vus: 20000
+epoch 9 | chunk 2 [##############################] 1242/1242 (100.0%) loss=5.0027
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 2 traite, tokens vus: 39872
+epoch 9 | chunk 3 [##############################] 1242/1242 (100.0%) loss=4.4309
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 3 traite, tokens vus: 59744
+epoch 9 | chunk 4 [##############################] 1242/1242 (100.0%) loss=5.4417
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 4 traite, tokens vus: 79616
+epoch 9 | chunk 5 [##############################] 1242/1242 (100.0%) loss=5.3204
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 5 traite, tokens vus: 99488
+epoch 9 | chunk 6 [##############################] 1242/1242 (100.0%) loss=6.4659
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 6 traite, tokens vus: 119360
+epoch 9 | chunk 7 [##############################] 1242/1242 (100.0%) loss=4.2031
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 7 traite, tokens vus: 139232
+epoch 9 | chunk 8 [##############################] 1242/1242 (100.0%) loss=3.5799
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 8 traite, tokens vus: 159104
+epoch 9 | chunk 9 [##############################] 1242/1242 (100.0%) loss=3.8902
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 9 traite, tokens vus: 178976
+epoch 9 | chunk 10 [##############################] 1242/1242 (100.0%) loss=4.2630
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 10 traite, tokens vus: 198848
+epoch 9 | chunk 11 [##############################] 1242/1242 (100.0%) loss=4.5202
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 11 traite, tokens vus: 218720
+ok
+epoch 9 | chunk 12 [##############################] 1242/1242 (100.0%) loss=3.7032
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 12 traite, tokens vus: 238592
+epoch 9 | chunk 13 [##############################] 1242/1242 (100.0%) loss=3.8307
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 13 traite, tokens vus: 258464
+epoch 9 | chunk 14 [##############################] 1242/1242 (100.0%) loss=5.3773
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 14 traite, tokens vus: 278336
+epoch 9 | chunk 15 [##############################] 1242/1242 (100.0%) loss=5.3238
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 15 traite, tokens vus: 298208
+epoch 9 | chunk 16 [##############################] 1242/1242 (100.0%) loss=3.7172
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 16 traite, tokens vus: 318080
+epoch 9 | chunk 17 [##############################] 1242/1242 (100.0%) loss=4.9527
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 17 traite, tokens vus: 337952
+epoch 9 | chunk 18 [##############################] 1242/1242 (100.0%) loss=4.9238
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 18 traite, tokens vus: 357824
+epoch 9 | chunk 19 [##############################] 1242/1242 (100.0%) loss=5.5731
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 19 traite, tokens vus: 377696
+epoch 9 | chunk 20 [##############################] 1242/1242 (100.0%) loss=3.6160
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 20 traite, tokens vus: 397568
+epoch 9 | chunk 21 [##############################] 1242/1242 (100.0%) loss=4.4816
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 21 traite, tokens vus: 417440
+epoch 9 | chunk 22 [##############################] 1242/1242 (100.0%) loss=3.4886
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 22 traite, tokens vus: 437312
+ok
+epoch 9 | chunk 23 [##############################] 1242/1242 (100.0%) loss=4.4008
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 23 traite, tokens vus: 457184
+epoch 9 | chunk 24 [##############################] 1242/1242 (100.0%) loss=5.3999
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 24 traite, tokens vus: 477056
+epoch 9 | chunk 25 [##############################] 1242/1242 (100.0%) loss=3.4206
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 25 traite, tokens vus: 496928
+epoch 9 | chunk 26 [##############################] 192/192 (100.0%) loss=5.0229
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+epoch 9 loss: 4.5405843657405125
+fin 1
+debut epoch 10
+epoch 10 | chunk 1 [##############################] 1242/1242 (100.0%) loss=4.8145
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 1 traite, tokens vus: 20000
+epoch 10 | chunk 2 [##############################] 1242/1242 (100.0%) loss=5.1408
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 2 traite, tokens vus: 39872
+epoch 10 | chunk 3 [##############################] 1242/1242 (100.0%) loss=4.3087
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 3 traite, tokens vus: 59744
+epoch 10 | chunk 4 [##############################] 1242/1242 (100.0%) loss=4.5272
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 4 traite, tokens vus: 79616
+epoch 10 | chunk 5 [##############################] 1242/1242 (100.0%) loss=5.7361
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 5 traite, tokens vus: 99488
+epoch 10 | chunk 6 [##############################] 1242/1242 (100.0%) loss=3.9474
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 6 traite, tokens vus: 119360
+epoch 10 | chunk 7 [##############################] 1242/1242 (100.0%) loss=3.7065
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 7 traite, tokens vus: 139232
+epoch 10 | chunk 8 [##############################] 1242/1242 (100.0%) loss=3.4140
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 8 traite, tokens vus: 159104
+epoch 10 | chunk 9 [##############################] 1242/1242 (100.0%) loss=5.8471
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 9 traite, tokens vus: 178976
+epoch 10 | chunk 10 [##############################] 1242/1242 (100.0%) loss=4.7280
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 10 traite, tokens vus: 198848
+epoch 10 | chunk 11 [##############################] 1242/1242 (100.0%) loss=5.0046
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 11 traite, tokens vus: 218720
+ok
+epoch 10 | chunk 12 [##############################] 1242/1242 (100.0%) loss=4.0454
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 12 traite, tokens vus: 238592
+epoch 10 | chunk 13 [##############################] 1242/1242 (100.0%) loss=3.7948
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 13 traite, tokens vus: 258464
+epoch 10 | chunk 14 [##############################] 1242/1242 (100.0%) loss=4.8594
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 14 traite, tokens vus: 278336
+epoch 10 | chunk 15 [##############################] 1242/1242 (100.0%) loss=5.9978
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 15 traite, tokens vus: 298208
+epoch 10 | chunk 16 [##############################] 1242/1242 (100.0%) loss=4.3222
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 16 traite, tokens vus: 318080
+epoch 10 | chunk 17 [##############################] 1242/1242 (100.0%) loss=4.2394
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 17 traite, tokens vus: 337952
+epoch 10 | chunk 18 [##############################] 1242/1242 (100.0%) loss=3.8650
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 18 traite, tokens vus: 357824
+epoch 10 | chunk 19 [##############################] 1242/1242 (100.0%) loss=3.8268
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 19 traite, tokens vus: 377696
+epoch 10 | chunk 20 [##############################] 1242/1242 (100.0%) loss=3.3479
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 20 traite, tokens vus: 397568
+epoch 10 | chunk 21 [##############################] 1242/1242 (100.0%) loss=5.0477
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 21 traite, tokens vus: 417440
+epoch 10 | chunk 22 [##############################] 1242/1242 (100.0%) loss=4.9163
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 22 traite, tokens vus: 437312
+ok
+epoch 10 | chunk 23 [##############################] 1242/1242 (100.0%) loss=5.0750
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 23 traite, tokens vus: 457184
+epoch 10 | chunk 24 [##############################] 1242/1242 (100.0%) loss=3.3093
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 24 traite, tokens vus: 477056
+epoch 10 | chunk 25 [##############################] 1242/1242 (100.0%) loss=3.5373
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 25 traite, tokens vus: 496928
+epoch 10 | chunk 26 [##############################] 192/192 (100.0%) loss=5.3081
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+epoch 10 loss: 4.416761199579861
+fin 1
+debut epoch 11
+epoch 11 | chunk 1 [##############################] 1242/1242 (100.0%) loss=4.1094
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 1 traite, tokens vus: 20000
+epoch 11 | chunk 2 [##############################] 1242/1242 (100.0%) loss=3.3415
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 2 traite, tokens vus: 39872
+epoch 11 | chunk 3 [##############################] 1242/1242 (100.0%) loss=4.9220
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 3 traite, tokens vus: 59744
+epoch 11 | chunk 4 [##############################] 1242/1242 (100.0%) loss=3.1160
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 4 traite, tokens vus: 79616
+epoch 11 | chunk 5 [##############################] 1242/1242 (100.0%) loss=4.4776
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 5 traite, tokens vus: 99488
+epoch 11 | chunk 6 [##############################] 1242/1242 (100.0%) loss=4.3762
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 6 traite, tokens vus: 119360
+epoch 11 | chunk 7 [##############################] 1242/1242 (100.0%) loss=4.8542
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 7 traite, tokens vus: 139232
+epoch 11 | chunk 8 [##############################] 1242/1242 (100.0%) loss=4.3575
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 8 traite, tokens vus: 159104
+epoch 11 | chunk 9 [##############################] 1242/1242 (100.0%) loss=4.9610
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 9 traite, tokens vus: 178976
+epoch 11 | chunk 10 [##############################] 1242/1242 (100.0%) loss=4.0088
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 10 traite, tokens vus: 198848
+epoch 11 | chunk 11 [##############################] 1242/1242 (100.0%) loss=4.7011
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 11 traite, tokens vus: 218720
+ok
+epoch 11 | chunk 12 [##############################] 1242/1242 (100.0%) loss=3.0973
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 12 traite, tokens vus: 238592
+epoch 11 | chunk 13 [##############################] 1242/1242 (100.0%) loss=4.1289
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 13 traite, tokens vus: 258464
+epoch 11 | chunk 14 [##############################] 1242/1242 (100.0%) loss=4.4341
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 14 traite, tokens vus: 278336
+epoch 11 | chunk 15 [##############################] 1242/1242 (100.0%) loss=4.4617
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 15 traite, tokens vus: 298208
+epoch 11 | chunk 16 [##############################] 1242/1242 (100.0%) loss=3.5477
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 16 traite, tokens vus: 318080
+epoch 11 | chunk 17 [##############################] 1242/1242 (100.0%) loss=4.4171
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 17 traite, tokens vus: 337952
+epoch 11 | chunk 18 [##############################] 1242/1242 (100.0%) loss=5.0622
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 18 traite, tokens vus: 357824
+epoch 11 | chunk 19 [##############################] 1242/1242 (100.0%) loss=4.4351
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 19 traite, tokens vus: 377696
+epoch 11 | chunk 20 [##############################] 1242/1242 (100.0%) loss=4.9228
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 20 traite, tokens vus: 397568
+epoch 11 | chunk 21 [##############################] 1242/1242 (100.0%) loss=3.4352
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 21 traite, tokens vus: 417440
+epoch 11 | chunk 22 [##############################] 1242/1242 (100.0%) loss=4.1800
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 22 traite, tokens vus: 437312
+ok
+epoch 11 | chunk 23 [##############################] 1242/1242 (100.0%) loss=4.3592
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 23 traite, tokens vus: 457184
+epoch 11 | chunk 24 [##############################] 1242/1242 (100.0%) loss=2.9780
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 24 traite, tokens vus: 477056
+epoch 11 | chunk 25 [##############################] 1242/1242 (100.0%) loss=4.2096
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 25 traite, tokens vus: 496928
+epoch 11 | chunk 26 [##############################] 192/192 (100.0%) loss=5.0100
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+epoch 11 loss: 4.307851374824697
+fin 1
+debut epoch 12
+epoch 12 | chunk 1 [##############################] 1242/1242 (100.0%) loss=3.3069
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 1 traite, tokens vus: 20000
+epoch 12 | chunk 2 [##############################] 1242/1242 (100.0%) loss=4.1864
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 2 traite, tokens vus: 39872
+epoch 12 | chunk 3 [##############################] 1242/1242 (100.0%) loss=2.6273
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 3 traite, tokens vus: 59744
+epoch 12 | chunk 4 [##############################] 1242/1242 (100.0%) loss=4.0090
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 4 traite, tokens vus: 79616
+epoch 12 | chunk 5 [##############################] 1242/1242 (100.0%) loss=3.8057
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 5 traite, tokens vus: 99488
+epoch 12 | chunk 6 [##############################] 1242/1242 (100.0%) loss=3.8233
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 6 traite, tokens vus: 119360
+epoch 12 | chunk 7 [##############################] 1242/1242 (100.0%) loss=2.3751
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 7 traite, tokens vus: 139232
+epoch 12 | chunk 8 [##############################] 1242/1242 (100.0%) loss=4.0269
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 8 traite, tokens vus: 159104
+epoch 12 | chunk 9 [##############################] 1242/1242 (100.0%) loss=2.6173
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 9 traite, tokens vus: 178976
+epoch 12 | chunk 10 [##############################] 1242/1242 (100.0%) loss=4.3003
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 10 traite, tokens vus: 198848
+epoch 12 | chunk 11 [##############################] 1242/1242 (100.0%) loss=3.9107
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 11 traite, tokens vus: 218720
+ok
+epoch 12 | chunk 12 [##############################] 1242/1242 (100.0%) loss=3.3973
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 12 traite, tokens vus: 238592
+epoch 12 | chunk 13 [##############################] 1242/1242 (100.0%) loss=5.0373
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 13 traite, tokens vus: 258464
+epoch 12 | chunk 14 [##############################] 1242/1242 (100.0%) loss=3.7889
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 14 traite, tokens vus: 278336
+epoch 12 | chunk 15 [##############################] 1242/1242 (100.0%) loss=5.4825
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 15 traite, tokens vus: 298208
+epoch 12 | chunk 16 [##############################] 1242/1242 (100.0%) loss=3.4903
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 16 traite, tokens vus: 318080
+epoch 12 | chunk 17 [##############################] 1242/1242 (100.0%) loss=2.9359
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 17 traite, tokens vus: 337952
+epoch 12 | chunk 18 [##############################] 1242/1242 (100.0%) loss=4.0842
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 18 traite, tokens vus: 357824
+epoch 12 | chunk 19 [##############################] 1242/1242 (100.0%) loss=4.4694
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 19 traite, tokens vus: 377696
+epoch 12 | chunk 20 [##############################] 1242/1242 (100.0%) loss=3.4777
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 20 traite, tokens vus: 397568
+epoch 12 | chunk 21 [##############################] 1242/1242 (100.0%) loss=3.5411
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 21 traite, tokens vus: 417440
+epoch 12 | chunk 22 [##############################] 1242/1242 (100.0%) loss=4.7277
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 22 traite, tokens vus: 437312
+ok
+epoch 12 | chunk 23 [##############################] 1242/1242 (100.0%) loss=4.9293
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 23 traite, tokens vus: 457184
+epoch 12 | chunk 24 [##############################] 1242/1242 (100.0%) loss=5.0440
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 24 traite, tokens vus: 477056
+epoch 12 | chunk 25 [##############################] 1242/1242 (100.0%) loss=4.1483
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 25 traite, tokens vus: 496928
+epoch 12 | chunk 26 [##############################] 192/192 (100.0%) loss=4.2021
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+epoch 12 loss: 4.21387055823214
+fin 1
+debut epoch 13
+epoch 13 | chunk 1 [##############################] 1242/1242 (100.0%) loss=4.5716
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 1 traite, tokens vus: 20000
+epoch 13 | chunk 2 [##############################] 1242/1242 (100.0%) loss=3.6362
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 2 traite, tokens vus: 39872
+epoch 13 | chunk 3 [##############################] 1242/1242 (100.0%) loss=5.1895
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 3 traite, tokens vus: 59744
+epoch 13 | chunk 4 [##############################] 1242/1242 (100.0%) loss=3.8554
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 4 traite, tokens vus: 79616
+epoch 13 | chunk 5 [##############################] 1242/1242 (100.0%) loss=4.1032
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 5 traite, tokens vus: 99488
+epoch 13 | chunk 6 [##############################] 1242/1242 (100.0%) loss=4.1217
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 6 traite, tokens vus: 119360
+epoch 13 | chunk 7 [##############################] 1242/1242 (100.0%) loss=3.9346
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 7 traite, tokens vus: 139232
+epoch 13 | chunk 8 [##############################] 1242/1242 (100.0%) loss=4.1104
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 8 traite, tokens vus: 159104
+epoch 13 | chunk 9 [##############################] 1242/1242 (100.0%) loss=4.8556
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 9 traite, tokens vus: 178976
+epoch 13 | chunk 10 [##############################] 1242/1242 (100.0%) loss=3.9477
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 10 traite, tokens vus: 198848
+epoch 13 | chunk 11 [##############################] 1242/1242 (100.0%) loss=3.3703
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 11 traite, tokens vus: 218720
+ok
+epoch 13 | chunk 12 [##############################] 1242/1242 (100.0%) loss=4.2017
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 12 traite, tokens vus: 238592
+epoch 13 | chunk 13 [##############################] 1242/1242 (100.0%) loss=3.5711
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 13 traite, tokens vus: 258464
+epoch 13 | chunk 14 [##############################] 1242/1242 (100.0%) loss=4.3221
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 14 traite, tokens vus: 278336
+epoch 13 | chunk 15 [##############################] 1242/1242 (100.0%) loss=3.3894
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 15 traite, tokens vus: 298208
+epoch 13 | chunk 16 [##############################] 1242/1242 (100.0%) loss=3.3748
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 16 traite, tokens vus: 318080
+epoch 13 | chunk 17 [##############################] 1242/1242 (100.0%) loss=3.9179
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 17 traite, tokens vus: 337952
+epoch 13 | chunk 18 [##############################] 1242/1242 (100.0%) loss=3.4163
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 18 traite, tokens vus: 357824
+epoch 13 | chunk 19 [##############################] 1242/1242 (100.0%) loss=3.7249
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 19 traite, tokens vus: 377696
+epoch 13 | chunk 20 [##############################] 1242/1242 (100.0%) loss=3.5365
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 20 traite, tokens vus: 397568
+epoch 13 | chunk 21 [##############################] 1242/1242 (100.0%) loss=3.4024
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 21 traite, tokens vus: 417440
+epoch 13 | chunk 22 [##############################] 1242/1242 (100.0%) loss=3.8022
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 22 traite, tokens vus: 437312
+ok
+epoch 13 | chunk 23 [##############################] 1242/1242 (100.0%) loss=2.9421
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 23 traite, tokens vus: 457184
+epoch 13 | chunk 24 [##############################] 1242/1242 (100.0%) loss=2.9891
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 24 traite, tokens vus: 477056
+epoch 13 | chunk 25 [##############################] 1242/1242 (100.0%) loss=4.5444
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 25 traite, tokens vus: 496928
+epoch 13 | chunk 26 [##############################] 192/192 (100.0%) loss=3.7301
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+epoch 13 loss: 4.132125288879556
+fin 1
+debut epoch 14
+epoch 14 | chunk 1 [##############################] 1242/1242 (100.0%) loss=2.9414
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 1 traite, tokens vus: 20000
+epoch 14 | chunk 2 [##############################] 1242/1242 (100.0%) loss=4.7275
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 2 traite, tokens vus: 39872
+epoch 14 | chunk 3 [##############################] 1242/1242 (100.0%) loss=4.0743
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 3 traite, tokens vus: 59744
+epoch 14 | chunk 4 [##############################] 1242/1242 (100.0%) loss=3.3108
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 4 traite, tokens vus: 79616
+epoch 14 | chunk 5 [##############################] 1242/1242 (100.0%) loss=4.8573
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 5 traite, tokens vus: 99488
+epoch 14 | chunk 6 [##############################] 1242/1242 (100.0%) loss=3.9993
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 6 traite, tokens vus: 119360
+epoch 14 | chunk 7 [##############################] 1242/1242 (100.0%) loss=4.5820
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 7 traite, tokens vus: 139232
+epoch 14 | chunk 8 [##############################] 1242/1242 (100.0%) loss=3.3790
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 8 traite, tokens vus: 159104
+epoch 14 | chunk 9 [##############################] 1242/1242 (100.0%) loss=4.6095
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 9 traite, tokens vus: 178976
+epoch 14 | chunk 10 [##############################] 1242/1242 (100.0%) loss=3.5576
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 10 traite, tokens vus: 198848
+epoch 14 | chunk 11 [##############################] 1242/1242 (100.0%) loss=2.5443
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 11 traite, tokens vus: 218720
+ok
+epoch 14 | chunk 12 [##############################] 1242/1242 (100.0%) loss=4.0295
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 12 traite, tokens vus: 238592
+epoch 14 | chunk 13 [##############################] 1242/1242 (100.0%) loss=3.1515
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 13 traite, tokens vus: 258464
+epoch 14 | chunk 14 [##############################] 1242/1242 (100.0%) loss=3.2710
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 14 traite, tokens vus: 278336
+epoch 14 | chunk 15 [##############################] 1242/1242 (100.0%) loss=3.2756
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 15 traite, tokens vus: 298208
+epoch 14 | chunk 16 [##############################] 1242/1242 (100.0%) loss=4.3698
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 16 traite, tokens vus: 318080
+epoch 14 | chunk 17 [##############################] 1242/1242 (100.0%) loss=2.6123
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 17 traite, tokens vus: 337952
+epoch 14 | chunk 18 [##############################] 1242/1242 (100.0%) loss=2.8812
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 18 traite, tokens vus: 357824
+epoch 14 | chunk 19 [##############################] 1242/1242 (100.0%) loss=4.6337
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 19 traite, tokens vus: 377696
+epoch 14 | chunk 20 [##############################] 1242/1242 (100.0%) loss=1.7406
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 20 traite, tokens vus: 397568
+epoch 14 | chunk 21 [##############################] 1242/1242 (100.0%) loss=3.7067
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 21 traite, tokens vus: 417440
+epoch 14 | chunk 22 [##############################] 1242/1242 (100.0%) loss=2.8222
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 22 traite, tokens vus: 437312
+ok
+epoch 14 | chunk 23 [##############################] 1242/1242 (100.0%) loss=3.8693
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 23 traite, tokens vus: 457184
+epoch 14 | chunk 24 [##############################] 1242/1242 (100.0%) loss=3.9720
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 24 traite, tokens vus: 477056
+epoch 14 | chunk 25 [##############################] 1242/1242 (100.0%) loss=2.9685
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 25 traite, tokens vus: 496928
+epoch 14 | chunk 26 [##############################] 192/192 (100.0%) loss=4.8473
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+epoch 14 loss: 4.062311440269358
+fin 1
+debut epoch 15
+epoch 15 | chunk 1 [##############################] 1242/1242 (100.0%) loss=4.8745
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 1 traite, tokens vus: 20000
+epoch 15 | chunk 2 [##############################] 1242/1242 (100.0%) loss=3.6504
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 2 traite, tokens vus: 39872
+epoch 15 | chunk 3 [##############################] 1242/1242 (100.0%) loss=4.2394
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 3 traite, tokens vus: 59744
+epoch 15 | chunk 4 [##############################] 1242/1242 (100.0%) loss=3.6473
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 4 traite, tokens vus: 79616
+epoch 15 | chunk 5 [##############################] 1242/1242 (100.0%) loss=2.9124
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 5 traite, tokens vus: 99488
+epoch 15 | chunk 6 [##############################] 1242/1242 (100.0%) loss=3.8937
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 6 traite, tokens vus: 119360
+epoch 15 | chunk 7 [##############################] 1242/1242 (100.0%) loss=4.2072
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 7 traite, tokens vus: 139232
+epoch 15 | chunk 8 [##############################] 1242/1242 (100.0%) loss=3.3616
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 8 traite, tokens vus: 159104
+epoch 15 | chunk 9 [##############################] 1242/1242 (100.0%) loss=4.7850
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 9 traite, tokens vus: 178976
+epoch 15 | chunk 10 [##############################] 1242/1242 (100.0%) loss=3.5101
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 10 traite, tokens vus: 198848
+epoch 15 | chunk 11 [##############################] 1242/1242 (100.0%) loss=3.4758
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 11 traite, tokens vus: 218720
+ok
+epoch 15 | chunk 12 [##############################] 1242/1242 (100.0%) loss=4.8691
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 12 traite, tokens vus: 238592
+epoch 15 | chunk 13 [##############################] 1242/1242 (100.0%) loss=3.7217
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 13 traite, tokens vus: 258464
+epoch 15 | chunk 14 [##############################] 1242/1242 (100.0%) loss=4.8713
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 14 traite, tokens vus: 278336
+epoch 15 | chunk 15 [##############################] 1242/1242 (100.0%) loss=3.9370
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 15 traite, tokens vus: 298208
+epoch 15 | chunk 16 [##############################] 1242/1242 (100.0%) loss=3.9263
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 16 traite, tokens vus: 318080
+epoch 15 | chunk 17 [##############################] 1242/1242 (100.0%) loss=4.0408
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 17 traite, tokens vus: 337952
+epoch 15 | chunk 18 [##############################] 1242/1242 (100.0%) loss=4.0267
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 18 traite, tokens vus: 357824
+epoch 15 | chunk 19 [##############################] 1242/1242 (100.0%) loss=3.9288
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 19 traite, tokens vus: 377696
+epoch 15 | chunk 20 [##############################] 1242/1242 (100.0%) loss=3.7935
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 20 traite, tokens vus: 397568
+epoch 15 | chunk 21 [##############################] 1242/1242 (100.0%) loss=5.1945
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 21 traite, tokens vus: 417440
+epoch 15 | chunk 22 [##############################] 1242/1242 (100.0%) loss=4.0851
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 22 traite, tokens vus: 437312
+ok
+epoch 15 | chunk 23 [##############################] 1242/1242 (100.0%) loss=5.0840
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 23 traite, tokens vus: 457184
+epoch 15 | chunk 24 [##############################] 1242/1242 (100.0%) loss=3.6307
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 24 traite, tokens vus: 477056
+epoch 15 | chunk 25 [##############################] 1242/1242 (100.0%) loss=4.6196
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 25 traite, tokens vus: 496928
+epoch 15 | chunk 26 [##############################] 192/192 (100.0%) loss=4.7434
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+epoch 15 loss: 4.001475519090309
+fin 1
+debut epoch 16
+epoch 16 | chunk 1 [##############################] 1242/1242 (100.0%) loss=2.8086
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 1 traite, tokens vus: 20000
+epoch 16 | chunk 2 [##############################] 1242/1242 (100.0%) loss=3.9848
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 2 traite, tokens vus: 39872
+epoch 16 | chunk 3 [##############################] 1242/1242 (100.0%) loss=3.9485
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 3 traite, tokens vus: 59744
+epoch 16 | chunk 4 [##############################] 1242/1242 (100.0%) loss=3.5539
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 4 traite, tokens vus: 79616
+epoch 16 | chunk 5 [##############################] 1242/1242 (100.0%) loss=3.7270
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 5 traite, tokens vus: 99488
+epoch 16 | chunk 6 [##############################] 1242/1242 (100.0%) loss=4.5648
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 6 traite, tokens vus: 119360
+epoch 16 | chunk 7 [##############################] 1242/1242 (100.0%) loss=3.7050
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 7 traite, tokens vus: 139232
+epoch 16 | chunk 8 [##############################] 1242/1242 (100.0%) loss=4.4446
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 8 traite, tokens vus: 159104
+epoch 16 | chunk 9 [##############################] 1242/1242 (100.0%) loss=3.5937
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 9 traite, tokens vus: 178976
+epoch 16 | chunk 10 [##############################] 1242/1242 (100.0%) loss=3.1227
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 10 traite, tokens vus: 198848
+epoch 16 | chunk 11 [##############################] 1242/1242 (100.0%) loss=4.0415
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 11 traite, tokens vus: 218720
+ok
+epoch 16 | chunk 12 [##############################] 1242/1242 (100.0%) loss=2.4000
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 12 traite, tokens vus: 238592
+epoch 16 | chunk 13 [##############################] 1242/1242 (100.0%) loss=4.1976
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 13 traite, tokens vus: 258464
+epoch 16 | chunk 14 [##############################] 1242/1242 (100.0%) loss=3.4912
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 14 traite, tokens vus: 278336
+epoch 16 | chunk 15 [##############################] 1242/1242 (100.0%) loss=4.7262
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 15 traite, tokens vus: 298208
+epoch 16 | chunk 16 [##############################] 1242/1242 (100.0%) loss=4.0584
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 16 traite, tokens vus: 318080
+epoch 16 | chunk 17 [##############################] 1242/1242 (100.0%) loss=3.9966
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 17 traite, tokens vus: 337952
+epoch 16 | chunk 18 [##############################] 1242/1242 (100.0%) loss=4.4080
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 18 traite, tokens vus: 357824
+epoch 16 | chunk 19 [##############################] 1242/1242 (100.0%) loss=3.3290
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 19 traite, tokens vus: 377696
+epoch 16 | chunk 20 [##############################] 1242/1242 (100.0%) loss=2.2030
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 20 traite, tokens vus: 397568
+epoch 16 | chunk 21 [##############################] 1242/1242 (100.0%) loss=4.2406
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 21 traite, tokens vus: 417440
+epoch 16 | chunk 22 [##############################] 1242/1242 (100.0%) loss=4.4482
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 22 traite, tokens vus: 437312
+ok
+epoch 16 | chunk 23 [##############################] 1242/1242 (100.0%) loss=4.1957
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 23 traite, tokens vus: 457184
+epoch 16 | chunk 24 [##############################] 1242/1242 (100.0%) loss=4.1974
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 24 traite, tokens vus: 477056
+epoch 16 | chunk 25 [##############################] 1242/1242 (100.0%) loss=5.1080
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 25 traite, tokens vus: 496928
+epoch 16 | chunk 26 [##############################] 192/192 (100.0%) loss=4.9469
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+epoch 16 loss: 3.9478252480913922
+fin 1
+debut epoch 17
+epoch 17 | chunk 1 [##############################] 1242/1242 (100.0%) loss=4.1240
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 1 traite, tokens vus: 20000
+epoch 17 | chunk 2 [##############################] 1242/1242 (100.0%) loss=3.3238
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 2 traite, tokens vus: 39872
+epoch 17 | chunk 3 [##############################] 1242/1242 (100.0%) loss=3.7405
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 3 traite, tokens vus: 59744
+epoch 17 | chunk 4 [##############################] 1242/1242 (100.0%) loss=3.7731
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 4 traite, tokens vus: 79616
+epoch 17 | chunk 5 [##############################] 1242/1242 (100.0%) loss=3.7496
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 5 traite, tokens vus: 99488
+epoch 17 | chunk 6 [##############################] 1242/1242 (100.0%) loss=3.5466
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 6 traite, tokens vus: 119360
+epoch 17 | chunk 7 [##############################] 1242/1242 (100.0%) loss=3.3377
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 7 traite, tokens vus: 139232
+epoch 17 | chunk 8 [##############################] 1242/1242 (100.0%) loss=4.7488
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 8 traite, tokens vus: 159104
+epoch 17 | chunk 9 [##############################] 1242/1242 (100.0%) loss=3.3486
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 9 traite, tokens vus: 178976
+epoch 17 | chunk 10 [##############################] 1242/1242 (100.0%) loss=2.9844
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 10 traite, tokens vus: 198848
+epoch 17 | chunk 11 [##############################] 1242/1242 (100.0%) loss=3.1905
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 11 traite, tokens vus: 218720
+ok
+epoch 17 | chunk 12 [##############################] 1242/1242 (100.0%) loss=2.1611
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 12 traite, tokens vus: 238592
+epoch 17 | chunk 13 [##############################] 1242/1242 (100.0%) loss=4.8371
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 13 traite, tokens vus: 258464
+epoch 17 | chunk 14 [##############################] 1242/1242 (100.0%) loss=3.9179
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 14 traite, tokens vus: 278336
+epoch 17 | chunk 15 [##############################] 1242/1242 (100.0%) loss=3.1087
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 15 traite, tokens vus: 298208
+epoch 17 | chunk 16 [##############################] 1242/1242 (100.0%) loss=3.8599
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 16 traite, tokens vus: 318080
+epoch 17 | chunk 17 [##############################] 1242/1242 (100.0%) loss=4.5648
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 17 traite, tokens vus: 337952
+epoch 17 | chunk 18 [##############################] 1242/1242 (100.0%) loss=4.3335
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 18 traite, tokens vus: 357824
+epoch 17 | chunk 19 [##############################] 1242/1242 (100.0%) loss=4.2523
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 19 traite, tokens vus: 377696
+epoch 17 | chunk 20 [##############################] 1242/1242 (100.0%) loss=2.7528
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 20 traite, tokens vus: 397568
+epoch 17 | chunk 21 [##############################] 1242/1242 (100.0%) loss=2.9367
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 21 traite, tokens vus: 417440
+epoch 17 | chunk 22 [##############################] 1242/1242 (100.0%) loss=4.1610
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 22 traite, tokens vus: 437312
+ok
+epoch 17 | chunk 23 [##############################] 1242/1242 (100.0%) loss=3.6649
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 23 traite, tokens vus: 457184
+epoch 17 | chunk 24 [##############################] 1242/1242 (100.0%) loss=3.4274
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 24 traite, tokens vus: 477056
+epoch 17 | chunk 25 [##############################] 1242/1242 (100.0%) loss=3.6363
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 25 traite, tokens vus: 496928
+epoch 17 | chunk 26 [##############################] 192/192 (100.0%) loss=4.3805
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+epoch 17 loss: 3.9016209187950857
+fin 1
+debut epoch 18
+epoch 18 | chunk 1 [##############################] 1242/1242 (100.0%) loss=4.9664
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 1 traite, tokens vus: 20000
+epoch 18 | chunk 2 [##############################] 1242/1242 (100.0%) loss=4.2006
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 2 traite, tokens vus: 39872
+epoch 18 | chunk 3 [##############################] 1242/1242 (100.0%) loss=4.2003
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 3 traite, tokens vus: 59744
+epoch 18 | chunk 4 [##############################] 1242/1242 (100.0%) loss=4.9135
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 4 traite, tokens vus: 79616
+epoch 18 | chunk 5 [##############################] 1242/1242 (100.0%) loss=2.8332
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 5 traite, tokens vus: 99488
+epoch 18 | chunk 6 [##############################] 1242/1242 (100.0%) loss=3.2831
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 6 traite, tokens vus: 119360
+epoch 18 | chunk 7 [##############################] 1242/1242 (100.0%) loss=2.7176
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 7 traite, tokens vus: 139232
+epoch 18 | chunk 8 [##############################] 1242/1242 (100.0%) loss=3.7114
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 8 traite, tokens vus: 159104
+epoch 18 | chunk 9 [##############################] 1242/1242 (100.0%) loss=4.5324
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 9 traite, tokens vus: 178976
+epoch 18 | chunk 10 [##############################] 1242/1242 (100.0%) loss=4.4217
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 10 traite, tokens vus: 198848
+epoch 18 | chunk 11 [##############################] 1242/1242 (100.0%) loss=4.2983
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 11 traite, tokens vus: 218720
+ok
+epoch 18 | chunk 12 [##############################] 1242/1242 (100.0%) loss=1.9510
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 12 traite, tokens vus: 238592
+epoch 18 | chunk 13 [##############################] 1242/1242 (100.0%) loss=3.7995
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 13 traite, tokens vus: 258464
+epoch 18 | chunk 14 [##############################] 1242/1242 (100.0%) loss=4.0799
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 14 traite, tokens vus: 278336
+epoch 18 | chunk 15 [##############################] 1242/1242 (100.0%) loss=2.9623
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 15 traite, tokens vus: 298208
+epoch 18 | chunk 16 [##############################] 1242/1242 (100.0%) loss=2.6037
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 16 traite, tokens vus: 318080
+epoch 18 | chunk 17 [##############################] 1242/1242 (100.0%) loss=2.9220
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 17 traite, tokens vus: 337952
+epoch 18 | chunk 18 [##############################] 1242/1242 (100.0%) loss=3.1335
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 18 traite, tokens vus: 357824
+epoch 18 | chunk 19 [##############################] 1242/1242 (100.0%) loss=4.7568
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 19 traite, tokens vus: 377696
+epoch 18 | chunk 20 [##############################] 1242/1242 (100.0%) loss=3.1885
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 20 traite, tokens vus: 397568
+epoch 18 | chunk 21 [##############################] 1242/1242 (100.0%) loss=3.0551
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 21 traite, tokens vus: 417440
+epoch 18 | chunk 22 [##############################] 1242/1242 (100.0%) loss=2.8123
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 22 traite, tokens vus: 437312
+ok
+epoch 18 | chunk 23 [##############################] 1242/1242 (100.0%) loss=4.4656
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 23 traite, tokens vus: 457184
+epoch 18 | chunk 24 [##############################] 1242/1242 (100.0%) loss=4.7839
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 24 traite, tokens vus: 477056
+epoch 18 | chunk 25 [##############################] 1242/1242 (100.0%) loss=2.7292
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 25 traite, tokens vus: 496928
+epoch 18 | chunk 26 [##############################] 192/192 (100.0%) loss=4.6240
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+epoch 18 loss: 3.8578275258971058
+fin 1
+debut epoch 19
+epoch 19 | chunk 1 [##############################] 1242/1242 (100.0%) loss=2.9612
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 1 traite, tokens vus: 20000
+epoch 19 | chunk 2 [##############################] 1242/1242 (100.0%) loss=4.4014
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 2 traite, tokens vus: 39872
+epoch 19 | chunk 3 [##############################] 1242/1242 (100.0%) loss=4.4352
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 3 traite, tokens vus: 59744
+epoch 19 | chunk 4 [##############################] 1242/1242 (100.0%) loss=2.8660
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 4 traite, tokens vus: 79616
+epoch 19 | chunk 5 [##############################] 1242/1242 (100.0%) loss=3.2695
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 5 traite, tokens vus: 99488
+epoch 19 | chunk 6 [##############################] 1242/1242 (100.0%) loss=3.6407
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 6 traite, tokens vus: 119360
+epoch 19 | chunk 7 [##############################] 1242/1242 (100.0%) loss=4.5687
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 7 traite, tokens vus: 139232
+epoch 19 | chunk 8 [##############################] 1242/1242 (100.0%) loss=4.1425
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 8 traite, tokens vus: 159104
+epoch 19 | chunk 9 [##############################] 1242/1242 (100.0%) loss=4.6769
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 9 traite, tokens vus: 178976
+epoch 19 | chunk 10 [##############################] 1242/1242 (100.0%) loss=5.0615
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 10 traite, tokens vus: 198848
+epoch 19 | chunk 11 [##############################] 1242/1242 (100.0%) loss=3.2166
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 11 traite, tokens vus: 218720
+ok
+epoch 19 | chunk 12 [##############################] 1242/1242 (100.0%) loss=3.8251
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 12 traite, tokens vus: 238592
+epoch 19 | chunk 13 [##############################] 1242/1242 (100.0%) loss=3.3638
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 13 traite, tokens vus: 258464
+epoch 19 | chunk 14 [##############################] 1242/1242 (100.0%) loss=4.0807
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 14 traite, tokens vus: 278336
+epoch 19 | chunk 15 [##############################] 1242/1242 (100.0%) loss=3.6816
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 15 traite, tokens vus: 298208
+epoch 19 | chunk 16 [##############################] 1242/1242 (100.0%) loss=2.7065
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 16 traite, tokens vus: 318080
+epoch 19 | chunk 17 [##############################] 1242/1242 (100.0%) loss=3.5918
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 17 traite, tokens vus: 337952
+epoch 19 | chunk 18 [##############################] 1242/1242 (100.0%) loss=3.6371
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 18 traite, tokens vus: 357824
+epoch 19 | chunk 19 [##############################] 1242/1242 (100.0%) loss=4.4439
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 19 traite, tokens vus: 377696
+epoch 19 | chunk 20 [##############################] 1242/1242 (100.0%) loss=2.5800
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 20 traite, tokens vus: 397568
+epoch 19 | chunk 21 [##############################] 1242/1242 (100.0%) loss=2.9131
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 21 traite, tokens vus: 417440
+epoch 19 | chunk 22 [##############################] 1242/1242 (100.0%) loss=3.0995
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 22 traite, tokens vus: 437312
+ok
+epoch 19 | chunk 23 [##############################] 1242/1242 (100.0%) loss=3.4580
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 23 traite, tokens vus: 457184
+epoch 19 | chunk 24 [##############################] 1242/1242 (100.0%) loss=4.6227
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 24 traite, tokens vus: 477056
+epoch 19 | chunk 25 [##############################] 1242/1242 (100.0%) loss=3.2905
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 25 traite, tokens vus: 496928
+epoch 19 | chunk 26 [##############################] 192/192 (100.0%) loss=4.0025
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+epoch 19 loss: 3.8178082784864005
+fin 1
+debut epoch 20
+epoch 20 | chunk 1 [##############################] 1242/1242 (100.0%) loss=2.3086
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 1 traite, tokens vus: 20000
+epoch 20 | chunk 2 [##############################] 1242/1242 (100.0%) loss=3.3844
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 2 traite, tokens vus: 39872
+epoch 20 | chunk 3 [##############################] 1242/1242 (100.0%) loss=4.6887
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 3 traite, tokens vus: 59744
+epoch 20 | chunk 4 [##############################] 1242/1242 (100.0%) loss=4.2754
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 4 traite, tokens vus: 79616
+epoch 20 | chunk 5 [##############################] 1242/1242 (100.0%) loss=4.0088
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 5 traite, tokens vus: 99488
+epoch 20 | chunk 6 [##############################] 1242/1242 (100.0%) loss=3.4589
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 6 traite, tokens vus: 119360
+epoch 20 | chunk 7 [##############################] 1242/1242 (100.0%) loss=3.4800
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 7 traite, tokens vus: 139232
+epoch 20 | chunk 8 [##############################] 1242/1242 (100.0%) loss=3.1990
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 8 traite, tokens vus: 159104
+epoch 20 | chunk 9 [##############################] 1242/1242 (100.0%) loss=3.2850
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 9 traite, tokens vus: 178976
+epoch 20 | chunk 10 [##############################] 1242/1242 (100.0%) loss=4.3604
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 10 traite, tokens vus: 198848
+epoch 20 | chunk 11 [##############################] 1242/1242 (100.0%) loss=3.9979
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 11 traite, tokens vus: 218720
+ok
+epoch 20 | chunk 12 [##############################] 1242/1242 (100.0%) loss=3.1220
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 12 traite, tokens vus: 238592
+epoch 20 | chunk 13 [##############################] 1242/1242 (100.0%) loss=2.7854
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 13 traite, tokens vus: 258464
+epoch 20 | chunk 14 [##############################] 1242/1242 (100.0%) loss=3.6214
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 14 traite, tokens vus: 278336
+epoch 20 | chunk 15 [##############################] 1242/1242 (100.0%) loss=3.2636
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 15 traite, tokens vus: 298208
+epoch 20 | chunk 16 [##############################] 1242/1242 (100.0%) loss=3.7154
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 16 traite, tokens vus: 318080
+epoch 20 | chunk 17 [##############################] 1242/1242 (100.0%) loss=2.9062
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 17 traite, tokens vus: 337952
+epoch 20 | chunk 18 [##############################] 1242/1242 (100.0%) loss=3.2958
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 18 traite, tokens vus: 357824
+epoch 20 | chunk 19 [##############################] 1242/1242 (100.0%) loss=3.7849
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 19 traite, tokens vus: 377696
+epoch 20 | chunk 20 [##############################] 1242/1242 (100.0%) loss=3.5154
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 20 traite, tokens vus: 397568
+epoch 20 | chunk 21 [##############################] 1242/1242 (100.0%) loss=3.3297
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 21 traite, tokens vus: 417440
+epoch 20 | chunk 22 [##############################] 1242/1242 (100.0%) loss=4.9998
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 22 traite, tokens vus: 437312
+ok
+epoch 20 | chunk 23 [##############################] 1242/1242 (100.0%) loss=4.3321
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 23 traite, tokens vus: 457184
+epoch 20 | chunk 24 [##############################] 1242/1242 (100.0%) loss=3.4756
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 24 traite, tokens vus: 477056
+epoch 20 | chunk 25 [##############################] 1242/1242 (100.0%) loss=3.5000
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+chunk 25 traite, tokens vus: 496928
+epoch 20 | chunk 26 [##############################] 192/192 (100.0%) loss=4.3214
+checkpoint sauvegarde: /content/drive/Othercomputers/surface 9/python/projets/IA/modelV3.0.pt
+epoch 20 loss: 3.7839834319973606
+fin 1
+vecs shape: torch.Size([1, 128, 128])
+transformer out shape: torch.Size([1, 128, 128])
+pred_id: 19
+vocab.json invalide: /content/drive/Othercomputers/surface 9/python/projets/IA/vocab.json ligne 2536675, colonne 14 (position 57227814). Decodage texte desactive.
+Regenerer ou recopier vocab.json, puis verifier le fichier avec: python -m json.tool vocab.json
+vocab introuvable: /content/drive/Othercomputers/surface 9/python/projets/IA/vocab.json (affichage en IDs uniquement)
+phrase depart: 0 1 2 3 3 4 3 3 5 6 7 7 8 9 10 11 12 13 14 12
+phrase avec prediction: 0 1 2 3 3 4 3 3 5 6 7 7 8 9 10 11 12 13 14 12 46118 18 18 18 18 18 18 18 18 1116 4068 1116 4068 1116 4068 1116 4068 1116 4068 1116
+
+
+
+
+debut
+nouveau datset
+nouveau model 3.1
+transformeurs corrigé
+dataset trouve: /kaggle/input/datasets/bgbg1000/model-v-3/dataset_ids.txt (938657462 octets)
+dataset utilise: /kaggle/input/datasets/bgbg1000/model-v-3/dataset_ids.txt
+vocab introuvable: /kaggle/input/datasets/bgbg1000/model-v-3/vocab.json (decodage texte desactive)
+gpu detecte: Tesla T4 (compute capability sm_75)
+cuda version pytorch: 12.8
+device utilise: cuda
+cuda disponible: True
+gpu: Tesla T4
+cuda version pytorch: 12.8
+nombre de gpu detectes: 2
+essai de chargement
+checkpoint charge: /kaggle/input/datasets/bgbg1000/model-v-3/modelV3.0.pt
+debut epoch 1
+epoch 1 | chunk 1 [##############################] 1242/1242 (100.0%) loss=7.1079
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 1 traite, tokens vus: 20000
+epoch 1 | chunk 2 [##############################] 1242/1242 (100.0%) loss=5.0654
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 2 traite, tokens vus: 39872
+epoch 1 | chunk 3 [##############################] 1242/1242 (100.0%) loss=5.1169
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 3 traite, tokens vus: 59744
+epoch 1 | chunk 4 [##############################] 1242/1242 (100.0%) loss=7.4951
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 4 traite, tokens vus: 79616
+epoch 1 | chunk 5 [##############################] 1242/1242 (100.0%) loss=7.5332
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 5 traite, tokens vus: 99488
+epoch 1 | chunk 6 [##############################] 1242/1242 (100.0%) loss=7.4421
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 6 traite, tokens vus: 119360
+epoch 1 | chunk 7 [##############################] 1242/1242 (100.0%) loss=7.8742
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 7 traite, tokens vus: 139232
+epoch 1 | chunk 8 [##############################] 1242/1242 (100.0%) loss=5.1546
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 8 traite, tokens vus: 159104
+epoch 1 | chunk 9 [##############################] 1242/1242 (100.0%) loss=7.1043
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 9 traite, tokens vus: 178976
+epoch 1 | chunk 10 [##############################] 1242/1242 (100.0%) loss=5.6159
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 10 traite, tokens vus: 198848
+epoch 1 | chunk 11 [##############################] 1242/1242 (100.0%) loss=5.8817
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 11 traite, tokens vus: 218720
+ok
+epoch 1 | chunk 12 [##############################] 1242/1242 (100.0%) loss=6.0269
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 12 traite, tokens vus: 238592
+epoch 1 | chunk 13 [##############################] 1242/1242 (100.0%) loss=7.6333
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 13 traite, tokens vus: 258464
+epoch 1 | chunk 14 [##############################] 1242/1242 (100.0%) loss=6.4232
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 14 traite, tokens vus: 278336
+epoch 1 | chunk 15 [##############################] 1242/1242 (100.0%) loss=6.1417
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 15 traite, tokens vus: 298208
+epoch 1 | chunk 16 [##############################] 1242/1242 (100.0%) loss=8.4268
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 16 traite, tokens vus: 318080
+epoch 1 | chunk 17 [##############################] 1242/1242 (100.0%) loss=6.22668
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 17 traite, tokens vus: 337952
+epoch 1 | chunk 18 [##############################] 1242/1242 (100.0%) loss=8.21285
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 18 traite, tokens vus: 357824
+epoch 1 | chunk 19 [##############################] 1242/1242 (100.0%) loss=7.62801
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 19 traite, tokens vus: 377696
+epoch 1 | chunk 20 [##############################] 1242/1242 (100.0%) loss=6.36522
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 20 traite, tokens vus: 397568
+epoch 1 | chunk 21 [##############################] 1242/1242 (100.0%) loss=7.13044
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 21 traite, tokens vus: 417440
+epoch 1 | chunk 22 [##############################] 1242/1242 (100.0%) loss=7.77211
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 22 traite, tokens vus: 437312
+ok
+epoch 1 | chunk 23 [##############################] 1242/1242 (100.0%) loss=5.04838
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 23 traite, tokens vus: 457184
+epoch 1 | chunk 24 [##############################] 1242/1242 (100.0%) loss=7.04445
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 24 traite, tokens vus: 477056
+epoch 1 | chunk 25 [##############################] 1242/1242 (100.0%) loss=8.35259
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 25 traite, tokens vus: 496928
+epoch 1 | chunk 26 [##############################] 192/192 (100.0%) loss=7.19625
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+epoch 1 loss: 6.917115448638592
+fin 1
+debut epoch 2
+epoch 2 | chunk 1 [##############################] 1242/1242 (100.0%) loss=6.4191
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 1 traite, tokens vus: 20000
+epoch 2 | chunk 2 [##############################] 1242/1242 (100.0%) loss=5.78601
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 2 traite, tokens vus: 39872
+epoch 2 | chunk 3 [##############################] 1242/1242 (100.0%) loss=5.3705
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 3 traite, tokens vus: 59744
+epoch 2 | chunk 4 [##############################] 1242/1242 (100.0%) loss=5.5810
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 4 traite, tokens vus: 79616
+epoch 2 | chunk 5 [##############################] 1242/1242 (100.0%) loss=8.4403
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 5 traite, tokens vus: 99488
+epoch 2 | chunk 6 [##############################] 1242/1242 (100.0%) loss=6.52434
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 6 traite, tokens vus: 119360
+epoch 2 | chunk 7 [##############################] 1242/1242 (100.0%) loss=6.4275
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 7 traite, tokens vus: 139232
+epoch 2 | chunk 8 [##############################] 1242/1242 (100.0%) loss=7.90626
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 8 traite, tokens vus: 159104
+epoch 2 | chunk 9 [##############################] 1242/1242 (100.0%) loss=6.08500
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 9 traite, tokens vus: 178976
+epoch 2 | chunk 10 [##############################] 1242/1242 (100.0%) loss=8.33767
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 10 traite, tokens vus: 198848
+epoch 2 | chunk 11 [##############################] 1242/1242 (100.0%) loss=9.46617
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 11 traite, tokens vus: 218720
+ok
+epoch 2 | chunk 12 [##############################] 1242/1242 (100.0%) loss=7.33418
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 12 traite, tokens vus: 238592
+epoch 2 | chunk 13 [##############################] 1242/1242 (100.0%) loss=5.47926
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 13 traite, tokens vus: 258464
+epoch 2 | chunk 14 [##############################] 1242/1242 (100.0%) loss=6.73903
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 14 traite, tokens vus: 278336
+epoch 2 | chunk 15 [##############################] 1242/1242 (100.0%) loss=6.08655
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 15 traite, tokens vus: 298208
+epoch 2 | chunk 16 [##############################] 1242/1242 (100.0%) loss=6.59097
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 16 traite, tokens vus: 318080
+epoch 2 | chunk 17 [##############################] 1242/1242 (100.0%) loss=6.38520
+checkpoint sauvegarde: /kaggle/working/modelV3.0.pt
+chunk 17 traite, tokens vus: 337952
+epoch 2 | chunk 18 [#########################-----] 1039/1242 ( 83.7%) loss=7.9803
+add Codeadd Markdown

@@ -1,0 +1,45 @@
+import numpy as np
+
+class AttentionHead:
+    def __init__(self, d_model, d_k):
+        """
+        d_model : taille des embeddings en entrée
+        d_k : taille interne de la tête
+        """
+
+        self.d_k = d_k
+
+        # Matrices de projection
+        self.W_q = np.random.randn(d_model, d_k)
+        self.W_k = np.random.randn(d_model, d_k)
+        self.W_v = np.random.randn(d_model, d_k)
+
+    def softmax(self, x):
+        exp_x = np.exp(x - np.max(x, axis=-1, keepdims=True))
+        return exp_x / np.sum(exp_x, axis=-1, keepdims=True)
+
+    def forward(self, X):
+        """
+        X : matrice des embeddings
+            shape = (nb_mots, d_model)
+
+        Retourne :
+        - output : vecteurs après attention (nb_mots, d_k)
+        - attention_weights : matrice des relations (nb_mots, nb_mots)
+        """
+
+        # 1️⃣ Projection en Q, K, V
+        Q = X @ self.W_q
+        K = X @ self.W_k
+        V = X @ self.W_v
+
+        # 2️⃣ Scores d’attention
+        scores = (Q @ K.T) / np.sqrt(self.d_k)
+
+        # 3️⃣ Poids normalisés
+        attention_weights = self.softmax(scores)
+
+        # 4️⃣ Combinaison pondérée
+        output = attention_weights @ V
+
+        return output, attention_weights

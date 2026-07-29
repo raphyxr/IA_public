@@ -1,0 +1,29 @@
+plan de mon modèle qui lit le .pt :
+
+
+
+
+
+
+1)faire une fonction décodeur a part ))))))))fait
+
+2)faire une fonction encodeur a part ))))))))fait
+
+3)faire le modèle:
+
+    A)préparateur de prompt (voir si fonction)
+
+    B)encode
+
+	C)embedding
+
+    d)LSTM
+
+    e)FC
+
+    f)Argmax (voir chat 'le chat')
+
+
+
+	
+

@@ -1,0 +1,18 @@
+# Datasets et corpus
+**/dataset*.csv
+**/dataset*.txt
+**/database.csv
+**data/Corpus_*.txt
+
+__pycache__/
+.github/
+Agent/
+**.json
+
+# Vocabulaires et listes lexicales
+**/vocab*.json
+model 1/verbes.csv
+model 1/pron.csv
+model 1/noms.csv
+model 1/adj_categories.csv
+model 1/categories.txt

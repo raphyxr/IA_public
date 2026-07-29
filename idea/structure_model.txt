@@ -1,0 +1,77 @@
+Pour ton pipeline, voici les fonctions/méthodes les plus utiles.
+
+**`torch`**
+- `torch.tensor(...)` : créer des tenseurs depuis tes IDs.
+- `torch.long` : type pour les IDs (obligatoire pour `Embedding`).
+- `torch.device("cuda" if torch.cuda.is_available() else "cpu")` : choisir GPU/CPU.
+- `torch.argmax(logits, dim=-1)` : prendre le mot prédit.
+- `torch.no_grad()` : inférence sans gradients.
+- `torch.save(...)` / `torch.load(...)` : sauvegarder/recharger.
+
+**`torch.nn`**
+- `nn.Embedding(vocab_size, emb_dim)` : IDs -> vecteurs.
+- `nn.LSTM(...)` ou `nn.GRU(...)` : modéliser la séquence.
+- `nn.Linear(hidden_dim, vocab_size)` : projeter vers le vocabulaire.
+- `nn.CrossEntropyLoss()` : loss pour prédiction du prochain token.
+- `model.train()` / `model.eval()` : mode entraînement / évaluation.
+- `model.parameters()` : donner les poids à l’optimiseur.
+- `model.to(device)` : envoyer modèle sur GPU/CPU.
+
+**`torch.optim`**
+- `optim.Adam(model.parameters(), lr=...)` : optimiseur.
+- `optimizer.zero_grad()` : reset gradients.
+- `loss.backward()` : calcul des gradients.
+- `optimizer.step()` : mise à jour des poids.
+
+**`torch.utils.data`**
+- `Dataset` : classe perso pour tes paires `(X, y)`.
+- `DataLoader(dataset, batch_size=..., shuffle=True)` : batchs automatiques.
+
+**Très utile en pratique**
+- `tqdm(...)` : barre de progression.
+- `json.dump(...)` / `json.load(...)` : sauvegarder `token2id`, `id2token`.
+
+Si tu veux, je peux te générer un `modele.py` minimal complet (Dataset + Model + boucle d’entraînement).
+
+code minimal:
+
+optimizer.zero_grad()
+logits = model(X_batch)          # embedding inclus dans model
+loss = criterion(logits, y_batch)
+loss.backward()                  # calcule les corrections
+optimizer.step()                 # applique les corrections
+
+
+
+
+
+
+
+
+
+
+Prochaine étape: ajouter l’apprentissage complet autour de ton `Embedding + LSTM`.
+
+1. Ajouter une couche de sortie:
+- `fc = nn.Linear(hidden_dim, vocab_size)`
+- prendre le dernier état `out[:, -1, :]` puis `logits = fc(...)`
+
+2. Créer les exemples d’entraînement:
+- `X`: contextes (ex: 5 IDs)
+- `y`: mot suivant (1 ID)
+- format: `X` en `torch.long` shape `[batch, seq_len]`, `y` en `[batch]`
+
+3. Ajouter `loss` + optimiseur:
+- `criterion = nn.CrossEntropyLoss()`
+- `optimizer = torch.optim.Adam(params, lr=...)`
+
+4. Boucle d’entraînement:
+- `optimizer.zero_grad()`
+- `logits = model(X_batch)`
+- `loss = criterion(logits, y_batch)`
+- `loss.backward()`
+- `optimizer.step()`
+
+5. Vérifier que la loss baisse sur plusieurs epochs.
+
+Si tu veux, je peux te coder cette version minimale directement dans [modele.py](c:/Users/asd/OneDrive/Documents/python/projets/IA/modele.py).
