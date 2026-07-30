@@ -1,0 +1,13 @@
+git add . ou nom_fichier_ou_dossier
+
+puis:
+
+git commit -m "message"
+
+puis:
+
+git push -u origin main --force
+
+ou peut être juste:
+
+git push
