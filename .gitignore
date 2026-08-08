@@ -8,7 +8,6 @@ __pycache__/
 .github/
 Agent/
 **.json
-
 # Vocabulaires et listes lexicales
 **/vocab*.json
 model 1/verbes.csv
