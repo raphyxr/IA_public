@@ -16,7 +16,7 @@ CONTEXT_SIZE = 128  # Nombre de tokens utilises pour predire le suivant. Exemple
 BATCH_SIZE = 16  # Nombre d'exemples traites en meme temps. Exemple: 2 sequences par passage
 CHUNK_TOKENS = 20000  # Nombre de tokens charges par morceau (chunk). Exemple: lire 5000 IDs puis entrainer
 EPOCHS = 30  # Nombre de passages complets d'entrainement. Exemple: 1 = un seul tour sur les donnees lues
-MAX_TOKENS_PER_EPOCH = 500000  # Limite de tokens lus par epoch. Exemple: arret apres 100000 tokens
+MAX_TOKENS_PER_EPOCH = None  # Limite de tokens lus par epoch. Exemple: arret apres 100000 tokens
 
 # Reprise d'entrainement (resume). Exemple: si True et que le fichier existe, on recharge les poids avant de re-entrainer.
 BASE_DIR = "/kaggle/input/datasets/bgbg1000/model-v-3/"  # Dossier Drive optionnel. Exemple: "/content/drive/MyDrive"
@@ -27,7 +27,7 @@ DATASET_IDS_PATH = os.path.join(DATA_DIR, "dataset-ids.txt")  # Chemin du fichie
 DATASET_IDS_FALLBACK_PATH = os.path.join(DATA_DIR, "dataset_ids.txt")  # Autre nom possible du dataset. Exemple: ancienne version du fichier
 CHECKPOINT_LOAD_PATH = os.path.join(SCRIPT_DIR, "modelV3.0.pt")  # Chemin du modele a CHARGER (lecture). Exemple: "C:/.../modele_streaming.pt"
 CHECKPOINT_SAVE_PATH = os.path.join(OUTPUT_DIR, "modelV3.0.pt")  # Chemin du modele a SAUVEGARDER. Kaggle: "/kaggle/working/modelV3.0.pt"
-RESUME_IF_CHECKPOINT_EXISTS = True  # True = reprend si possible, False = repart de zero. Exemple: False pour tout recommencer
+RESUME_IF_CHECKPOINT_EXISTS = False  # True = reprend si possible, False = repart de zero. Exemple: False pour tout recommencer
 
 # Affichage en mots (avec vocab.json). Exemple: afficher une "phrase" lisible au lieu des IDs.
 VOCAB_JSON_PATH = os.path.join(DATA_DIR, "vocab.json")  # Chemin du vocab. Exemple: "/content/drive/MyDrive/vocab.json" (dict: mot -> id)
@@ -303,13 +303,14 @@ def afficher_barre_progression(epoch, chunk_index, batch_index, total_batches, l
 #     pred_ids = torch.argmax(logits, dim=-1)  # Prend l'ID avec le score le plus haut. Exemple: [52, 17]
 #     return loss.item(), pred_ids  # Renvoie la perte (nombre) et les IDs predits. Exemple: (3.12, tensor([52,17]))
 
-
-def prediction(X_batch, y_batch, emb_layer, transformer, fc, optimizer, criterion):
+def prediction(X_batch, y_batch, emb_layer, pos_embedding, transformer, fc, optimizer, criterion):
     device = next(emb_layer.parameters()).device
     X_batch = X_batch.to(device, non_blocking=True)
     y_batch = y_batch.to(device, non_blocking=True)
 
-    vecs = embedding(X_batch, emb_layer)
+    positions = torch.arange(X_batch.size(1), device=device).unsqueeze(0)
+    vecs = embedding(X_batch, emb_layer) + pos_embedding(positions)
+
     out = transformer(vecs)
 
     # logits for each position
@@ -329,7 +330,9 @@ def prediction(X_batch, y_batch, emb_layer, transformer, fc, optimizer, criterio
 
 def init_training_objects(vocab_size=VOCAB_LIMIT, emb_dim=EMB_DIM, hidden_dim=HIDDEN_DIM, lr=0.001, optimizer_name="sgd"):
     """Cree le modele + loss + optimizer (utile pour entrainer plusieurs fois dans le meme notebook)."""
+
     emb_layer = nn.Embedding(vocab_size, emb_dim)
+    pos_embedding = nn.Embedding(CONTEXT_SIZE, emb_dim)
     transformer_layer = nn.TransformerEncoderLayer(
         d_model=emb_dim,
         nhead=4,
@@ -340,16 +343,21 @@ def init_training_objects(vocab_size=VOCAB_LIMIT, emb_dim=EMB_DIM, hidden_dim=HI
     fc = nn.Linear(emb_dim, vocab_size)
     criterion = nn.CrossEntropyLoss()
 
-    params = list(emb_layer.parameters()) + list(transformer.parameters()) + list(fc.parameters())
+    params = (
+        list(emb_layer.parameters())
+        + list(pos_embedding.parameters())
+        + list(transformer.parameters())
+        + list(fc.parameters())
+    )
+
     if optimizer_name.lower() == "adam":
         optimizer = torch.optim.Adam(params, lr=lr)
     else:
-        optimizer = torch.optim.Adam(params, lr=lr)
+        optimizer = torch.optim.SGD(params, lr=lr)
+    return emb_layer, pos_embedding, transformer, fc, optimizer, criterion
 
-    return emb_layer, transformer, fc, optimizer, criterion
 
-
-def load_checkpoint_if_compatible(path, emb_layer, transformer, fc, optimizer=None, vocab_size=None, emb_dim=None, hidden_dim=None):
+def load_checkpoint_if_compatible(path, emb_layer, pos_embedding, transformer, fc, optimizer=None, vocab_size=None, emb_dim=None, hidden_dim=None):
     """Charge un checkpoint seulement si les tailles correspondent, sinon leve une erreur claire."""
     ckpt = torch.load(path, map_location="cpu")
 
@@ -379,6 +387,7 @@ def load_checkpoint_if_compatible(path, emb_layer, transformer, fc, optimizer=No
             raise ValueError(f"checkpoint incompatible (fc): ckpt={tuple(fc_w.shape)} vs actuel={tuple(fc.weight.shape)}")
 
     emb_layer.load_state_dict(ckpt["emb"])
+    pos_embedding.load_state_dict(ckpt["pos_embedding"])
     transformer.load_state_dict(ckpt["transformer"])
     fc.load_state_dict(ckpt["fc"])
     if optimizer is not None and "optimizer" in ckpt:
@@ -389,14 +398,14 @@ def load_checkpoint_if_compatible(path, emb_layer, transformer, fc, optimizer=No
         else:
             optimizer.load_state_dict(opt_state)
 
-
-def save_checkpoint(path, emb_layer, transformer, fc, optimizer=None, meta=None):
+def save_checkpoint(path, emb_layer, pos_embedding, transformer, fc, optimizer=None, meta=None):
     """Sauvegarde un checkpoint (utile pour reprendre plus tard)."""
     checkpoint_dir = os.path.dirname(path)
     if checkpoint_dir:
         os.makedirs(checkpoint_dir, exist_ok=True)
     payload = {
         "emb": emb_layer.state_dict(),
+        "pos_embedding": pos_embedding.state_dict(),
         "transformer": transformer.state_dict(),
         "fc": fc.state_dict(),
     }
@@ -427,6 +436,7 @@ def build_checkpoint_meta(vocab_size, emb_dim, hidden_dim, context_size, epoch=N
 def train_streaming(  # Fonction principale d'entrainement en lecture progressive (streaming). Exemple: train sans charger tout le dataset
     path,  # Chemin du fichier d'IDs. Exemple: "/content/drive/MyDrive/dataset_ids.txt"
     emb_layer,  # Couche embedding du modele. Exemple: nn.Embedding(...)
+    pos_embedding,  # Embeddings qui indiquent la position des tokens
     transformer,  # Encodeur Transformer. Exemple: nn.TransformerEncoder(...)
     fc,  # Couche lineaire de sortie. Exemple: nn.Linear(...)
     optimizer,  # Optimiseur qui met a jour les poids. Exemple: torch.optim.SGD(...)
@@ -443,10 +453,12 @@ def train_streaming(  # Fonction principale d'entrainement en lecture progressiv
 ):  # Fin des parametres de la fonction. Exemple: appel train_streaming(...)
     """Entraine en streaming: lit le fichier par paquets d'IDs, puis entraine chunk par chunk."""  # Resume du flux. Exemple: lecture->train->lecture->train
     emb_layer.train()
+    pos_embedding.train()
     transformer.train()
     fc.train()
     device = next(emb_layer.parameters()).device
-    verifier_modules_sur_device(device, emb_layer, transformer, fc)
+    verifier_modules_sur_device(device, emb_layer, pos_embedding, transformer, fc)
+
 
     total_loss = 0.0  # Somme des pertes de tous les batches. Exemple: 0.0 puis 2.1 puis 4.8
     total_batches = 0  # Compteur de mini-lots traites. Exemple: 0 puis 1 puis 2
@@ -470,7 +482,7 @@ def train_streaming(  # Fonction principale d'entrainement en lecture progressiv
                 total_batches_chunk = len(loader)  # Nombre de mini-lots dans ce chunk. Exemple: 2500
                 exemple_decode_affiche = False  # Sert a n'afficher qu'un petit nombre d'exemples par chunk. Exemple: False puis True apres le premier affichage
                 for batch_index, (X_batch, y_batch) in enumerate(loader, start=1):  # Parcourt chaque mini-lot du chunk. Exemple: batch 1, batch 2, ...
-                    loss, pred_ids = prediction(X_batch, y_batch, emb_layer, transformer, fc, optimizer, criterion)  # Fait l'apprentissage du mini-lot et recupere les IDs predits
+                    loss, pred_ids = prediction(X_batch, y_batch, emb_layer, pos_embedding, transformer, fc, optimizer, criterion)  # Fait l'apprentissage du mini-lot et recupere les IDs predits
                     total_loss += loss  # Ajoute la perte du batch au total. Exemple: 4.8 + 1.2
                     total_batches += 1  # Compte un batch de plus. Exemple: 10 -> 11
                     afficher_barre_progression(epoch_num, chunk_index, batch_index, total_batches_chunk, loss=loss)  # Met a jour la barre du chunk courant. Exemple: 42%
@@ -482,7 +494,7 @@ def train_streaming(  # Fonction principale d'entrainement en lecture progressiv
                 meta = dict(checkpoint_meta or {})  # Copie les infos communes pour y ajouter l'avancement courant. Exemple: tailles + epoch
                 meta["chunk_index"] = chunk_index  # Note le chunk qui vient d'etre termine. Exemple: 7
                 meta["seen_tokens"] = seen_tokens  # Note combien de tokens ont ete lus. Exemple: 35000
-                save_checkpoint(checkpoint_path, emb_layer, transformer, fc, optimizer=optimizer, meta=meta)  # Ecrit le fichier .pt sur disque
+                save_checkpoint(checkpoint_path, emb_layer, pos_embedding, transformer, fc, optimizer=optimizer, meta=meta)  # Ecrit le fichier .pt sur disque
                 print(f"checkpoint sauvegarde: {checkpoint_path}")  # Confirme la sauvegarde du chunk. Exemple: checkpoint sauvegarde: modele_streaming.pt
             print(f"chunk {chunk_index} traite, tokens vus: {seen_tokens}")  # Affiche la progression. Exemple: chunk 1 traite, tokens vus: 5000
             buffer_ids = buffer_ids[-context_size:]  # Garde seulement les derniers tokens pour continuer proprement. Exemple: garde 3 derniers
@@ -494,7 +506,8 @@ def train_streaming(  # Fonction principale d'entrainement en lecture progressiv
         total_batches_chunk = len(loader)  # Nombre de mini-lots dans le dernier chunk. Exemple: 17
         exemple_decode_affiche = False  # Repart a zero pour le petit morceau final. Exemple: False au debut du reste
         for batch_index, (X_batch, y_batch) in enumerate(loader, start=1):  # Entraine sur ce dernier morceau. Exemple: boucle finale
-            loss, pred_ids = prediction(X_batch, y_batch, emb_layer, transformer, fc, optimizer, criterion)  # Mise a jour du modele avec recuperation des IDs predits
+            loss, pred_ids = prediction(X_batch, y_batch, emb_layer, pos_embedding, transformer, fc, optimizer, criterion)
+  # Mise a jour du modele avec recuperation des IDs predits
             total_loss += loss  # Ajoute la perte. Exemple: +0.9
             total_batches += 1  # Compte le batch. Exemple: +1
             afficher_barre_progression(epoch_num, chunk_index, batch_index, total_batches_chunk, loss=loss)  # Met a jour la barre du dernier chunk. Exemple: 100%
@@ -506,7 +519,7 @@ def train_streaming(  # Fonction principale d'entrainement en lecture progressiv
             meta = dict(checkpoint_meta or {})  # Copie les infos communes. Exemple: tailles du modele
             meta["chunk_index"] = chunk_index  # Note ce dernier chunk de fin. Exemple: 21
             meta["seen_tokens"] = seen_tokens  # Conserve le nombre total de tokens lus dans l'epoch. Exemple: 100000
-            save_checkpoint(checkpoint_path, emb_layer, transformer, fc, optimizer=optimizer, meta=meta)  # Ecrit le checkpoint final de chunk
+            save_checkpoint(checkpoint_path, emb_layer, pos_embedding, transformer, fc, optimizer=optimizer, meta=meta)  # Ecrit le checkpoint final de chunk
             print(f"checkpoint sauvegarde: {checkpoint_path}")  # Confirme la sauvegarde. Exemple: checkpoint sauvegarde: modele_streaming.pt
 
     return total_loss / max(total_batches, 1)  # Renvoie la perte moyenne. Exemple: total 30 / 10 batches = 3.0
@@ -545,6 +558,7 @@ if __name__ == "__main__":
             print("attention: comme on compresse les IDs avec %, les mots affiches peuvent etre approximatifs")  # Petit avertissement utile pour interpreter le texte affiche. Exemple: decode approximatif
 
     emb_layer = nn.Embedding(vocab_size, emb_dim)  # Cree la couche embedding. Exemple: [ID] -> vecteur 64
+    pos_embedding = nn.Embedding(context_size, emb_dim)
     transformer_layer = nn.TransformerEncoderLayer(
         d_model=emb_dim,
         nhead=4,
@@ -557,7 +571,7 @@ if __name__ == "__main__":
     criterion = nn.CrossEntropyLoss()  # Fonction de perte pour classification multi-classes. Exemple: compare logits et ID cible
     # SGD utilise beaucoup moins de RAM que Adam. Exemple: utile sur machine limitee.
     optimizer = torch.optim.Adam(
-    list(emb_layer.parameters()) + list(transformer.parameters()) + list(fc.parameters()),
+    list(emb_layer.parameters()) + list(pos_embedding.parameters()) + list(transformer.parameters()) + list(fc.parameters()),
     lr=0.001,
     ) # Fin creation optimiseur. Exemple: pret pour optimizer.step()
 
@@ -599,6 +613,7 @@ if __name__ == "__main__":
 
             # Deplacer les modules sur le device detecte (GPU si disponible)
             emb_layer.to(device)
+            pos_embedding.to(device)
             transformer.to(device)
             fc.to(device)
 
@@ -620,9 +635,10 @@ if __name__ == "__main__":
             print("astuce: garde les memes valeurs (VOCAB_LIMIT/EMB_DIM/HIDDEN_DIM) ou mets RESUME_IF_CHECKPOINT_EXISTS=False")  # Guide simple
 
     emb_layer.to(device)
+    pos_embedding.to(device)
     transformer.to(device)
     fc.to(device)
-    verifier_modules_sur_device(device, emb_layer, transformer, fc)
+    verifier_modules_sur_device(device, emb_layer, pos_embedding, transformer, fc)
 
     checkpoint_meta = build_checkpoint_meta(  # Prepare les infos communes pour toutes les sauvegardes. Exemple: tailles du modele
         vocab_size=vocab_size,
@@ -636,6 +652,7 @@ if __name__ == "__main__":
         loss_moyenne = train_streaming(  # Lance l'entrainement streaming pour une epoch. Exemple: retourne perte moyenne
             DATASET_IDS_PATH,  # Fichier source des IDs. Exemple: "/content/drive/MyDrive/dataset_ids.txt"
             emb_layer,  # Couche embedding a entrainer. Exemple: emb_layer
+            pos_embedding,  # Embeddings de position. Exemple: pos_embedding
             transformer,  # Transformer a entrainer. Exemple: transformer
             fc,  # Couche finale a entrainer. Exemple: fc
             optimizer,  # Optimiseur pour la mise a jour des poids. Exemple: SGD
@@ -656,6 +673,7 @@ if __name__ == "__main__":
     save_checkpoint(  # Sauvegarde finale du modele a la fin de toutes les epochs. Exemple: dernier etat complet
         CHECKPOINT_SAVE_PATH,
         emb_layer,
+        pos_embedding,
         transformer,
         fc,
         optimizer=optimizer,
@@ -669,7 +687,8 @@ if __name__ == "__main__":
     )
 
     x_ids = torch.tensor([ids_sample[:context_size]], dtype=torch.long, device=device)  # Construit une entree de test avec le contexte sample. Exemple: [[10,11,12]]
-    vecs = embedding(x_ids, emb_layer)  # Passe l'entree dans l'embedding. Exemple: [1,3] -> [1,3,64]
+    positions = torch.arange(x_ids.size(1), device=device).unsqueeze(0)
+    vecs = embedding(x_ids, emb_layer) + pos_embedding(positions)
     out = transformer(vecs)  # Passe les vecteurs dans le Transformer. Exemple: [1,3,64] -> [1,3,128]
     logits = fc(out[:, -1, :])  # Prend la derniere sortie et calcule les scores vocabulaire. Exemple: [1,128] -> [1,10000]
     pred_id = torch.argmax(logits, dim=-1).item()  # Prend l'ID predit le plus probable. Exemple: 452
@@ -700,7 +719,8 @@ if __name__ == "__main__":
         with torch.no_grad():  # Pas de gradients pendant la generation. Exemple: plus rapide et moins RAM
             for _ in range(GENERATE_TOKENS):  # Genere plusieurs tokens. Exemple: 20
                 x_ids = torch.tensor([context_ids], dtype=torch.long, device=device)  # Cree le batch 1. Exemple: [[10,11,12,13,14,15,16,17]]
-                vecs = embedding(x_ids, emb_layer)  # IDs -> vecteurs. Exemple: [1,8] -> [1,8,64]
+                positions = torch.arange(x_ids.size(1), device=device).unsqueeze(0)
+                vecs = embedding(x_ids, emb_layer) + pos_embedding(positions) # IDs -> vecteurs. Exemple: [1,8] -> [1,8,64]
                 out = transformer(vecs)  # Transformer. Exemple: [1,8,64] -> [1,8,128]
                 logits = fc(out[:, -1, :])  # Scores vocab. Exemple: [1,128] -> [1,10000]
                 next_id = int(torch.argmax(logits, dim=-1).item())  # Choisit l'ID le plus probable. Exemple: 452
