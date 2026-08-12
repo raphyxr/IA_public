@@ -591,6 +591,7 @@ if __name__ == "__main__":
                     "vocab_size": vocab_size,
                     "emb_dim": emb_dim,
                     "hidden_dim": hidden_dim,
+                    "context_size": context_size,
                 }
                 mismatches = []  # Stocke les differences.
                 for k, v in expected.items():  # Compare chaque taille.
@@ -607,7 +608,8 @@ if __name__ == "__main__":
                 if fc_w is not None and tuple(fc_w.shape) != tuple(fc.weight.shape):
                     raise ValueError(f"checkpoint incompatible (fc): ckpt={tuple(fc_w.shape)} vs actuel={tuple(fc.weight.shape)}")
 
-            emb_layer.load_state_dict(ckpt["emb"])  # Recharge les poids de l'embedding. Exemple: reprend l'apprentissage
+            emb_layer.load_state_dict(ckpt["emb"]) # Recharge les poids de l'embedding. Exemple: reprend l'apprentissage
+            pos_embedding.load_state_dict(ckpt["pos_embedding"])  
             transformer.load_state_dict(ckpt["transformer"])  # Recharge les poids du Transformer. Exemple: reprend l'apprentissage
             fc.load_state_dict(ckpt["fc"])  # Recharge les poids de la couche finale. Exemple: reprend l'apprentissage
 
@@ -686,12 +688,18 @@ if __name__ == "__main__":
         ),
     )
 
+    emb_layer.eval()
+    pos_embedding.eval()
+    transformer.eval()
+    fc.eval()
+
     x_ids = torch.tensor([ids_sample[:context_size]], dtype=torch.long, device=device)  # Construit une entree de test avec le contexte sample. Exemple: [[10,11,12]]
-    positions = torch.arange(x_ids.size(1), device=device).unsqueeze(0)
-    vecs = embedding(x_ids, emb_layer) + pos_embedding(positions)
-    out = transformer(vecs)  # Passe les vecteurs dans le Transformer. Exemple: [1,3,64] -> [1,3,128]
-    logits = fc(out[:, -1, :])  # Prend la derniere sortie et calcule les scores vocabulaire. Exemple: [1,128] -> [1,10000]
-    pred_id = torch.argmax(logits, dim=-1).item()  # Prend l'ID predit le plus probable. Exemple: 452
+    with torch.no_grad():
+        positions = torch.arange(x_ids.size(1), device=device).unsqueeze(0)
+        vecs = embedding(x_ids, emb_layer) + pos_embedding(positions)
+        out = transformer(vecs)
+        logits = fc(out[:, -1, :])
+        pred_id = torch.argmax(logits, dim=-1).item()
 
     print("vecs shape:", vecs.shape)  # Affiche la taille des embeddings de test. Exemple: torch.Size([1, 3, 64])
     print("transformer out shape:", out.shape)  # Affiche la taille de sortie Transformer de test. Exemple: torch.Size([1, 3, 128])
@@ -710,10 +718,11 @@ if __name__ == "__main__":
             ids_prompt = ids_sample[:]  # Fallback: utilise l'echantillon deja charge. Exemple: au moins context_size+1 normalement
 
         prompt_ids = ids_prompt[:PROMPT_TOKENS]  # Tokens de depart affiches. Exemple: 20 tokens
-        context_ids = prompt_ids[-context_size:]  # Contexte utilise par le modele (taille fixe). Exemple: 8 derniers tokens
+        context_ids = ids_prompt[-context_size:]  # Contexte utilise par le modele (taille fixe). Exemple: 8 derniers tokens
 
         generated_ids = []  # Liste des tokens predits. Exemple: [452, 12, 98, ...]
         emb_layer.eval()  # Mode evaluation. Exemple: pas de dropout (si un jour on en ajoute)
+        pos_embedding.eval()  # Mode evaluation. Exemple: stable pour generation
         transformer.eval()  # Mode evaluation. Exemple: stable pour generation
         fc.eval()  # Mode evaluation. Exemple: stable pour generation
         with torch.no_grad():  # Pas de gradients pendant la generation. Exemple: plus rapide et moins RAM
