@@ -399,7 +399,20 @@ def load_checkpoint_if_compatible(path, emb_layer, pos_embedding, transformer, f
             optimizer.load_state_dict(opt_state)
 
 def save_checkpoint(path, emb_layer, pos_embedding, transformer, fc, optimizer=None, meta=None):
-    """Sauvegarde un checkpoint (utile pour reprendre plus tard)."""
+    """Sauvegarde un checkpoint (utile pour reprendre plus tard).
+
+    IMPORTANT: torch.save() n'est PAS atomique. Si on lui donne directement
+    le chemin final, il tronque le fichier existant a 0 octet AVANT d'ecrire
+    les nouvelles donnees. Si le processus est coupe pendant cette ecriture
+    (crash, coupure GPU, limite de session, OOM...), le fichier .pt reste
+    vide ou corrompu, meme si un ancien checkpoint valide existait avant.
+
+    Solution: on ecrit dans un fichier temporaire a cote, on force l'ecriture
+    sur le disque (flush + fsync), puis on renomme (os.replace) vers le
+    chemin final. Un renommage est atomique au niveau du systeme de fichiers:
+    soit l'ancien fichier reste intact, soit le nouveau est complet. Jamais
+    d'etat "a moitie ecrit".
+    """
     checkpoint_dir = os.path.dirname(path)
     if checkpoint_dir:
         os.makedirs(checkpoint_dir, exist_ok=True)
@@ -413,7 +426,31 @@ def save_checkpoint(path, emb_layer, pos_embedding, transformer, fc, optimizer=N
         payload["optimizer"] = optimizer.state_dict()
     if meta is not None:
         payload["meta"] = meta
-    torch.save(payload, path)
+
+    tmp_path = path + ".tmp"  # Fichier temporaire ecrit a cote. Exemple: "modelV3.0.pt.tmp"
+    try:
+        with open(tmp_path, "wb") as f:  # Ouvre le fichier temporaire en ecriture binaire. Exemple: cree modelV3.0.pt.tmp
+            torch.save(payload, f)  # Ecrit le checkpoint dans le temporaire (pas encore le fichier final)
+            f.flush()  # Force Python/le buffer a transmettre les octets au systeme d'exploitation
+            os.fsync(f.fileno())  # Force l'OS a ecrire physiquement sur le disque (pas juste en cache memoire)
+    except Exception:
+        if os.path.exists(tmp_path):  # Si l'ecriture temporaire a echoue en cours de route. Exemple: coupure pendant l'ecriture
+            os.remove(tmp_path)  # On supprime le temporaire incomplet, le fichier final (ancien) reste intact
+        raise  # On relance l'erreur pour ne pas cacher le probleme
+
+    if os.path.exists(path):  # Garde une copie de secours de l'ancien checkpoint valide. Exemple: modelV3.0.pt -> modelV3.0.pt.bak
+        backup_path = path + ".bak"
+        try:
+            os.replace(path, backup_path)  # Renomme l'ancien fichier en .bak (ecrase l'ancien .bak s'il existe)
+        except OSError:
+            pass  # Si ca echoue (rare), on continue quand meme: le principal est de ne pas perdre le nouveau checkpoint
+
+    os.replace(tmp_path, path)  # Renommage atomique: le fichier final apparait complet ou n'apparait pas du tout
+
+    saved_size = os.path.getsize(path)  # Verifie la taille reelle du fichier ecrit sur disque. Exemple: 5243180 octets
+    if saved_size == 0:  # Securite supplementaire: si jamais le fichier final est vide, on previent clairement
+        raise IOError(f"echec de sauvegarde: {path} fait 0 octet apres ecriture")
+    return saved_size  # Renvoie la taille pour que l'appelant puisse l'afficher/logger
 
 
 def build_checkpoint_meta(vocab_size, emb_dim, hidden_dim, context_size, epoch=None, chunk_index=None, seen_tokens=None):
@@ -494,8 +531,8 @@ def train_streaming(  # Fonction principale d'entrainement en lecture progressiv
                 meta = dict(checkpoint_meta or {})  # Copie les infos communes pour y ajouter l'avancement courant. Exemple: tailles + epoch
                 meta["chunk_index"] = chunk_index  # Note le chunk qui vient d'etre termine. Exemple: 7
                 meta["seen_tokens"] = seen_tokens  # Note combien de tokens ont ete lus. Exemple: 35000
-                save_checkpoint(checkpoint_path, emb_layer, pos_embedding, transformer, fc, optimizer=optimizer, meta=meta)  # Ecrit le fichier .pt sur disque
-                print(f"checkpoint sauvegarde: {checkpoint_path}")  # Confirme la sauvegarde du chunk. Exemple: checkpoint sauvegarde: modele_streaming.pt
+                taille = save_checkpoint(checkpoint_path, emb_layer, pos_embedding, transformer, fc, optimizer=optimizer, meta=meta)  # Ecrit le fichier .pt sur disque (ecriture atomique)
+                print(f"checkpoint sauvegarde: {checkpoint_path} ({taille} octets)")  # Confirme la sauvegarde ET la taille reelle sur disque. Exemple: checkpoint sauvegarde: modelV3.0.pt (5243180 octets)
             print(f"chunk {chunk_index} traite, tokens vus: {seen_tokens}")  # Affiche la progression. Exemple: chunk 1 traite, tokens vus: 5000
             buffer_ids = buffer_ids[-context_size:]  # Garde seulement les derniers tokens pour continuer proprement. Exemple: garde 3 derniers
 
@@ -519,8 +556,8 @@ def train_streaming(  # Fonction principale d'entrainement en lecture progressiv
             meta = dict(checkpoint_meta or {})  # Copie les infos communes. Exemple: tailles du modele
             meta["chunk_index"] = chunk_index  # Note ce dernier chunk de fin. Exemple: 21
             meta["seen_tokens"] = seen_tokens  # Conserve le nombre total de tokens lus dans l'epoch. Exemple: 100000
-            save_checkpoint(checkpoint_path, emb_layer, pos_embedding, transformer, fc, optimizer=optimizer, meta=meta)  # Ecrit le checkpoint final de chunk
-            print(f"checkpoint sauvegarde: {checkpoint_path}")  # Confirme la sauvegarde. Exemple: checkpoint sauvegarde: modele_streaming.pt
+            taille = save_checkpoint(checkpoint_path, emb_layer, pos_embedding, transformer, fc, optimizer=optimizer, meta=meta)  # Ecrit le checkpoint final de chunk (ecriture atomique)
+            print(f"checkpoint sauvegarde: {checkpoint_path} ({taille} octets)")  # Confirme la sauvegarde ET la taille reelle sur disque. Exemple: checkpoint sauvegarde: modelV3.0.pt (5243180 octets)
 
     return total_loss / max(total_batches, 1)  # Renvoie la perte moyenne. Exemple: total 30 / 10 batches = 3.0
 
@@ -672,7 +709,7 @@ if __name__ == "__main__":
         print(f"epoch {epoch + 1} loss:", loss_moyenne)  # Affiche la perte moyenne de l'epoch. Exemple: epoch 1 loss: 3.12
         print("fin 1")
 
-    save_checkpoint(  # Sauvegarde finale du modele a la fin de toutes les epochs. Exemple: dernier etat complet
+    taille_finale = save_checkpoint(  # Sauvegarde finale du modele a la fin de toutes les epochs. Exemple: dernier etat complet
         CHECKPOINT_SAVE_PATH,
         emb_layer,
         pos_embedding,
@@ -687,6 +724,7 @@ if __name__ == "__main__":
             epoch=epochs,
         ),
     )
+    print(f"checkpoint final sauvegarde: {CHECKPOINT_SAVE_PATH} ({taille_finale} octets)")  # Confirme la taille reelle du checkpoint final. Exemple: checkpoint final sauvegarde: modelV3.0.pt (5243180 octets)
 
     emb_layer.eval()
     pos_embedding.eval()
