@@ -1,0 +1,10 @@
+bfloat16,"💬 chat models (RLHF, DPO, IFT, ...)",Original,MistralForCausalLM,8.90636130175029,7.242,False,1.219174164123715,0
+bfloat16,🟢 pretrained,Original,LlamaForCausalLM,25.64649419429311,34.389,False,22.7033978747449,0
+bfloat16,🟢 pretrained,Original,LlamaForCausalLM,26.72791290850813,34.389,False,23.15462857509891,0
+bfloat16,"💬 chat models (RLHF, DPO, IFT, ...)",Original,LlamaForCausalLM,33.35799367075618,34.389,False,22.423843867327744,0
+bfloat16,"💬 chat models (RLHF, DPO, IFT, ...)",Original,LlamaForCausalLM,29.403554842710225,34.389,False,6.774022458148835,0
+bfloat16,🟢 pretrained,Original,LlamaForCausalLM,16.745698054972127,6.061,False,1.8442095716487763,0
+bfloat16,"💬 chat models (RLHF, DPO, IFT, ...)",Original,LlamaForCausalLM,22.784006289829847,6.061,False,1.4447911071090622,0
+bfloat16,🟢 pretrained,Original,LlamaForCausalLM,22.153901514184795,8.829,False,1.4688920320817076,0
+bfloat16,🟢 pretrained,Original,LlamaForCausalLM,19.809786285875365,8.829,False,1.5680734132696938,0
+bfloat16,"💬 chat models (RLHF, DPO, IFT, ...)",Original,LlamaForCausalLM,29.53087222026097,8.829,False,1.453543490910605,0

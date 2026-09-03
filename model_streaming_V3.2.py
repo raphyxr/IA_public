@@ -25,9 +25,9 @@ DATA_DIR = BASE_DIR if BASE_DIR else SCRIPT_DIR  # Si BASE_DIR est vide, on lit 
 OUTPUT_DIR = "/kaggle/working" if os.path.exists("/kaggle/working") else SCRIPT_DIR  # Dossier ecriture. Kaggle: /input est lecture seule
 DATASET_IDS_PATH = os.path.join(DATA_DIR, "dataset-ids.txt")  # Chemin du fichier d'IDs. Exemple: "/content/drive/MyDrive/dataset-i.txt"
 DATASET_IDS_FALLBACK_PATH = os.path.join(DATA_DIR, "dataset_ids.txt")  # Autre nom possible du dataset. Exemple: ancienne version du fichier
-CHECKPOINT_LOAD_PATH = os.path.join(SCRIPT_DIR, "modelV3.0.pt")  # Chemin du modele a CHARGER (lecture). Exemple: "C:/.../modele_streaming.pt"
-CHECKPOINT_SAVE_PATH = os.path.join(OUTPUT_DIR, "modelV3.0.pt")  # Chemin du modele a SAUVEGARDER. Kaggle: "/kaggle/working/modelV3.0.pt"
-RESUME_IF_CHECKPOINT_EXISTS = False  # True = reprend si possible, False = repart de zero. Exemple: False pour tout recommencer
+CHECKPOINT_LOAD_PATH = /kaggle/working/modelV3.0.pt  # Chemin du modele a CHARGER (lecture). Exemple: "C:/.../modele_streaming.pt"
+CHECKPOINT_SAVE_PATH = /kaggle/working/modelV3.0.pt  # Chemin du modele a SAUVEGARDER. Kaggle: "/kaggle/working/modelV3.0.pt"
+RESUME_IF_CHECKPOINT_EXISTS = True  # True = reprend si possible, False = repart de zero. Exemple: False pour tout recommencer
 
 # Affichage en mots (avec vocab.json). Exemple: afficher une "phrase" lisible au lieu des IDs.
 VOCAB_JSON_PATH = os.path.join(DATA_DIR, "vocab.json")  # Chemin du vocab. Exemple: "/content/drive/MyDrive/vocab.json" (dict: mot -> id)
@@ -565,7 +565,7 @@ def train_streaming(  # Fonction principale d'entrainement en lecture progressiv
 if __name__ == "__main__":
     print("debut")
     print("nouveau datset")
-    print("nouveau model 3.1")
+    print("nouveau model 3.1.2")
     print("transformeurs corrigé")  # Ce bloc s'execute seulement si on lance ce fichier directement. Exemple: python modele_streaming.py
     parser = argparse.ArgumentParser(description="Entrainement streaming (RAM-friendly) sur dataset_ids.txt")
     parser.add_argument("--epochs", type=int, default=EPOCHS, help="Nombre d'epochs (ex: 1, 5, 30)")
