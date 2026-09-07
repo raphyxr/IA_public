@@ -2,13 +2,13 @@
 **/dataset*.csv
 **/dataset*.txt
 **/database.csv
-**data/Corpus_*.txt
+**/data/Corpus_*.txt
 
 __pycache__/
 .github/
 Agent/
 .vibe/
-projets/
+projects/
 **.json
 # Vocabulaires et listes lexicales
 **/vocab*.json
