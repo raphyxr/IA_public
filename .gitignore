@@ -10,6 +10,7 @@ Agent/
 .vibe/
 projects/
 **.json
+idea/
 # Vocabulaires et listes lexicales
 **/vocab*.json
 model 1/verbes.csv
