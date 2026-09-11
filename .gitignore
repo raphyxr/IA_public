@@ -11,6 +11,7 @@ Agent/
 projects/
 **.json
 idea/
+logs/
 # Vocabulaires et listes lexicales
 **/vocab*.json
 model 1/verbes.csv
